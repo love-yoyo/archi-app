@@ -1,0 +1,499 @@
+{
+  "logos": [
+    {
+      "name": "ArchDaily",
+      "url": "http://www.archdaily.cn/",
+      "target": "b",
+      "index": 0,
+      "img": {
+        "url": "img/logo/1.png",
+        "alt": "",
+        "hover_img": "img/logo_hover1.png"
+      }
+    },
+    {
+      "name": "谷德设计网|gooood",
+      "url": "http://www.gooood.hk/",
+      "target": "b",
+      "index": 1,
+      "img": {
+        "url": "img/logo/2.png",
+        "alt": "",
+        "hover_img": "img/logo_hover2.png"
+      }
+    },
+    {
+      "name": "专筑网",
+      "url": "http://www.iarch.cn/",
+      "target": "b",
+      "index": 2,
+      "img": {
+        "url": "img/logo/3.png",
+        "alt": "",
+        "hover_img": "img/logo_hover3.png"
+      }
+    },
+    {
+      "name": "在库言库",
+      "url": "http://www.ikuku.cn/",
+      "target": "b",
+      "index": 3,
+      "img": {
+        "url": "img/logo/4.png",
+        "alt": "",
+        "hover_img": "img/logo_hover4.png"
+      }
+    },
+    {
+      "name": "建筑学院",
+      "url": "http://www.archcollege.com/",
+      "target": "b",
+      "index": 4,
+      "img": {
+        "url": "img/logo/5.png",
+        "alt": "",
+        "hover_img": "img/logo_hover5.png"
+      }
+    },
+    {
+      "name": "灵感日报",
+      "url": "http://www.ideamsg.com/",
+      "target": "b",
+      "index": 5,
+      "img": {
+        "url": "img/logo/6.png",
+        "alt": "",
+        "hover_img": "img/logo_hover6.png"
+      }
+    },
+    {
+      "name": "Designboom",
+      "url": "http://www.designboom.cn/",
+      "target": "b",
+      "index": 6,
+      "img": {
+        "url": "img/logo/7.png",
+        "alt": "",
+        "hover_img": "img/logo_hover7.png"
+      }
+    },
+    {
+      "name": "ArchGo",
+      "url": "http://archgo.com/",
+      "target": "b",
+      "index": 7,
+      "img": {
+        "url": "img/logo/8.png",
+        "alt": "",
+        "hover_img": "img/logo_hover8.png"
+      }
+    },
+    {
+      "name": "八戒工程",
+      "url": "http://gc.zhubajie.com/",
+      "target": "b",
+      "index": 8,
+      "img": {
+        "url": "img/logo/9.png",
+        "alt": "",
+        "hover_img": "img/logo_hover9.png"
+      }
+    },
+    {
+      "name": "Nbimer",
+      "url": "http://www.nbimer.com/",
+      "target": "b",
+      "index": 9,
+      "img": {
+        "url": "img/logo/10.png",
+        "alt": "",
+        "hover_img": "img/logo_hover10.png"
+      }
+    },
+    {
+      "name": "E拓建筑网",
+      "url": "http://www.eeeetop.com/",
+      "target": "b",
+      "index": 10,
+      "img": {
+        "url": "img/logo/11.png",
+        "alt": "",
+        "hover_img": "img/logo_hover11.png"
+      }
+    },
+    {
+      "name": "E周网",
+      "url": "http://ieday.cn/",
+      "target": "b",
+      "index": 11,
+      "img": {
+        "url": "img/logo/12.png",
+        "alt": "",
+        "hover_img": "img/logo_hover12.png"
+      }
+    },
+    {
+      "name": "批给屋",
+      "url": "http://www.pgive.com/",
+      "target": "b",
+      "index": 12,
+      "img": {
+        "url": "img/logo/13.png",
+        "alt": "",
+        "hover_img": "img/logo_hover13.png"
+      }
+    },
+    {
+      "name": "SUBBS",
+      "url": "http://www.sketchupbbs.com/",
+      "target": "b",
+      "index": 13,
+      "img": {
+        "url": "img/logo/14.png",
+        "alt": "",
+        "hover_img": "img/logo_hover14.png"
+      }
+    },
+    {
+      "name": "建筑报道网",
+      "url": "http://www.archreport.com.cn/",
+      "target": "b",
+      "index": 14,
+      "img": {
+        "url": "img/logo/15.png",
+        "alt": "",
+        "hover_img": "img/logo_hover15.png"
+      }
+    },
+    {
+      "name": "观筑网",
+      "url": "http://www.archain.com/",
+      "target": "b",
+      "index": 15,
+      "img": {
+        "url": "img/logo/16.png",
+        "alt": "",
+        "hover_img": "img/logo_hover16.png"
+      }
+    },
+    {
+      "name": "建筑邦",
+      "url": "http://www.architbang.com/",
+      "target": "b",
+      "index": 16,
+      "img": {
+        "url": "img/logo/17.png",
+        "alt": "",
+        "hover_img": "img/logo_hover17.png"
+      }
+    },
+    {
+      "name": "坯子库",
+      "url": "http://www.piziku.com/",
+      "target": "b",
+      "index": 17,
+      "img": {
+        "url": "img/logo/18.png",
+        "alt": "",
+        "hover_img": "img/logo_hover18.png"
+      }
+    },
+    {
+      "name": "旅设",
+      "url": "http://www.lvshedesign.com/",
+      "target": "b",
+      "index": 18,
+      "img": {
+        "url": "img/logo/19.png",
+        "alt": "",
+        "hover_img": "img/logo_hover19.png"
+      }
+    },
+    {
+      "name": "搜建筑",
+      "url": "http://www.soujianzhu.cn/",
+      "target": "b",
+      "index": 19,
+      "img": {
+        "url": "img/logo/20.png",
+        "alt": "",
+        "hover_img": "img/logo_hover20.png"
+      }
+    },
+    {
+      "name": "褶子城市",
+      "url": "http://www.foldcity.com/",
+      "target": "b",
+      "index": 20,
+      "img": {
+        "url": "img/logo/21.png",
+        "alt": "",
+        "hover_img": "img/logo_hover21.png"
+      }
+    },
+    {
+      "name": "筑视网",
+      "url": "http://www.zshid.com/",
+      "target": "b",
+      "index": 21,
+      "img": {
+        "url": "img/logo/22.png",
+        "alt": "",
+        "hover_img": "img/logo_hover22.png"
+      }
+    },
+    {
+      "name": "BIM中国网",
+      "url": "http://www.cnbim.com/",
+      "target": "b",
+      "index": 22,
+      "img": {
+        "url": "img/logo/23.png",
+        "alt": "",
+        "hover_img": "img/logo_hover23.png"
+      }
+    },
+    {
+      "name": "筑易设计网",
+      "url": "http://www.zhuyinet.com/",
+      "target": "b",
+      "index": 23,
+      "img": {
+        "url": "img/logo/24.png",
+        "alt": "",
+        "hover_img": "img/logo_hover24.png"
+      }
+    },
+    {
+      "name": "三开间",
+      "url": "http://www.sankaijian.com/",
+      "target": "b",
+      "index": 24,
+      "img": {
+        "url": "img/logo/25.png",
+        "alt": "",
+        "hover_img": "img/logo_hover25.png"
+      }
+    },
+    {
+      "name": "建筑加油站",
+      "url": "http://www.archcomeon.com/",
+      "target": "b",
+      "index": 25,
+      "img": {
+        "url": "img/logo/26.png",
+        "alt": "",
+        "hover_img": "img/logo_hover26.png"
+      }
+    },
+    {
+      "name": "埃克思建筑",
+      "url": "http://www.xarchi.com/",
+      "target": "b",
+      "index": 26,
+      "img": {
+        "url": "img/logo/27.png",
+        "alt": "",
+        "hover_img": "img/logo_hover27.png"
+      }
+    },
+    {
+      "name": "紫天SU",
+      "url": "http://www.sublog.net/",
+      "target": "b",
+      "index": 27,
+      "img": {
+        "url": "img/logo/28.png",
+        "alt": "",
+        "hover_img": "img/logo_hover28.png"
+      }
+    },
+    {
+      "name": "行走建筑",
+      "url": "http://www.walkarc.com/",
+      "target": "b",
+      "index": 28,
+      "img": {
+        "url": "img/logo/29.png",
+        "alt": "",
+        "hover_img": "img/logo_hover29.png"
+      }
+    },
+    {
+      "name": "智筑网",
+      "url": "http://www.iqbbs.com/",
+      "target": "b",
+      "index": 29,
+      "img": {
+        "url": "img/logo/30.png",
+        "alt": "",
+        "hover_img": "img/logo_hover30.png"
+      }
+    },
+    {
+      "name": "建筑师的非建筑",
+      "url": "http://www.abovearch.com/",
+      "target": "b",
+      "index": 30,
+      "img": {
+        "url": "img/logo/31.png",
+        "alt": "",
+        "hover_img": "img/logo_hover31.png"
+      }
+    },
+    {
+      "name": "同时建筑",
+      "url": "http://www.tongimes.com/",
+      "target": "b",
+      "index": 31,
+      "img": {
+        "url": "img/logo/32.png",
+        "alt": "",
+        "hover_img": "img/logo_hover32.png"
+      }
+    },
+    {
+      "name": "活力网",
+      "url": "http://www.uzing.net/",
+      "target": "b",
+      "index": 32,
+      "img": {
+        "url": "img/logo/33.png",
+        "alt": "",
+        "hover_img": "img/logo_hover33.png"
+      }
+    },
+    {
+      "name": "大太阳建筑网",
+      "url": "http://www.10333.com/",
+      "target": "b",
+      "index": 33,
+      "img": {
+        "url": "img/logo/34.png",
+        "alt": "",
+        "hover_img": "img/logo_hover34.png"
+      }
+    },
+    {
+      "name": "SUBAR",
+      "url": "http://www.sketchupbar.com/",
+      "target": "b",
+      "index": 34,
+      "img": {
+        "url": "img/logo/35.png",
+        "alt": "",
+        "hover_img": "img/logo_hover35.png"
+      }
+    },
+    {
+      "name": "建筑酷",
+      "url": "http://www.jzkoo.net/",
+      "target": "b",
+      "index": 35,
+      "img": {
+        "url": "img/logo/36.png",
+        "alt": "",
+        "hover_img": "img/logo_hover36.png"
+      }
+    },
+    {
+      "name": "ACS",
+      "url": "http://www.acs.cn/",
+      "target": "b",
+      "index": 36,
+      "img": {
+        "url": "img/logo/37.png",
+        "alt": "",
+        "hover_img": "img/logo_hover37.png"
+      }
+    },
+    {
+      "name": "中国建设科技网",
+      "url": "http://www.build.cn/",
+      "target": "b",
+      "index": 37,
+      "img": {
+        "url": "img/logo/38.png",
+        "alt": "",
+        "hover_img": "img/logo_hover38.png"
+      }
+    },
+    {
+      "name": "美讯在线",
+      "url": "http://arch.liwai.com/",
+      "target": "b",
+      "index": 38,
+      "img": {
+        "url": "img/logo/39.png",
+        "alt": "",
+        "hover_img": "img/logo_hover39.png"
+      }
+    },
+    {
+      "name": "建筑师说",
+      "url": "http://www.lizhi.fm/708241/",
+      "target": "b",
+      "index": 39,
+      "img": {
+        "url": "img/logo/40.png",
+        "alt": "",
+        "hover_img": "img/logo_hover40.png"
+      }
+    },
+    {
+      "name": "自在建房",
+      "url": "http://www.zijianfang.cn/",
+      "target": "b",
+      "index": 40,
+      "img": {
+        "url": "img/logo/41.png",
+        "alt": "",
+        "hover_img": "img/logo_hover41.png"
+      }
+    },
+    {
+      "name": "BIM STUDIO",
+      "url": "http://bbs.bimst.com/",
+      "target": "b",
+      "index": 41,
+      "img": {
+        "url": "img/logo/42.png",
+        "alt": "",
+        "hover_img": "img/logo_hover42.png"
+      }
+    },
+    {
+      "name": "世界之旅",
+      "url": "http://www.archiworld.com.cn/",
+      "target": "b",
+      "index": 42,
+      "img": {
+        "url": "img/logo/43.png",
+        "alt": "",
+        "hover_img": "img/logo_hover43.png"
+      }
+    },
+    {
+      "name": "问筑网",
+      "url": "http://www.archask.com/",
+      "target": "b",
+      "index": 43,
+      "img": {
+        "url": "img/logo/44.png",
+        "alt": "",
+        "hover_img": "img/logo_hover44.png"
+      }
+    },
+    {
+      "name": "尖叫设计",
+      "url": "http://www.wowdsgn.com/",
+      "target": "b",
+      "index": 44,
+      "img": {
+        "url": "img/logo/45.png",
+        "alt": "",
+        "hover_img": "img/logo_hover45.png"
+      }
+    }
+  ]
+}

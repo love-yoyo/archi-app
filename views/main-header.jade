@@ -1,0 +1,47 @@
+header#top.navbar navbar-static-top bs-docs-nav(role='banner')
+    div.container.c-container
+        div.navbar-header
+            button.navbar-toggle.collapsed(aria-expanded='false',aria-controls='bs-navbar',data-target='#bs-navbar')
+                span.src-only= Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a.navbar-brand.archi-logo(href='http://www.archi123.com/')
+                img(src='img/archi-logo.png')
+        nav#bs-navbar.collapse.navbar-collapse
+            ul.nav.navbar-nav.c-nav
+                li
+                    a(href='http://www.archi123.com/')= 导航首页
+                li
+                    a(href='archi-choiceness.html',target='_blank')= 建筑精选
+                li
+                    a(href='')= 资讯精选
+                    ul
+                        li
+                            a(href='#')= 建筑新闻
+                        li
+                            a(href='#')= 竞赛展会
+                li
+                    a(href='http://wx.archi123.com/',target='_blank')= 微信导航
+                li.active
+                    a(href='')= 免费资料
+                li
+                    a(href='')= 人物访谈
+                li
+                    a(href='',target='_blank')= 网站实例
+            ul
+                li
+                    a(href='',onclick='SetHome(this,window.location)')= 设为首页
+                li
+                    a(href='',onclick='AddFavorite(window.location,document.title)')= 加入收藏
+                li
+                    a(href='')= 旗下网站
+                    ul.dropdown-menu
+                        li
+                            a(href='')= 室内导航
+                        li
+                            a(href='')= 土木导航
+                        li
+                            a(href='')= 建筑酷
+
+

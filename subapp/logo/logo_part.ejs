@@ -1,0 +1,26 @@
+<% 
+for(var i=0;i<logoArr.length;i++){ 
+    var isActive = i==0 ? "active" :"";
+%>
+    <div class="logo-container <%= isActive%>">
+        <% 
+        for(var j=0;j<logoArr[i].length;j++){ 
+            var _logo = logoArr[i][j] || {};
+            var _target = _logo.target=="b" ? "_blank" : "";
+            var _isImg = _logo.img && _logo.img.url;
+        %>
+        <div class="logo" data-index="<%= count*i+j%>">
+            <a href="<%= _logo.url %>" target="<%= _target %>">
+                <% if (_isImg) {%>
+                <img src="<%= _logo.img.url%>" alt="<%=(_logo.name||"")%>" >
+                <% } else {%>
+                <span class="l-label"><%=(_logo.name || "")%></span>
+                <% } %>
+            </a>
+            <i class="triangle"></i>
+        </div>
+        <%
+        }
+        %>
+    </div>
+<%}%>
