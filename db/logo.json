@@ -3,6 +3,7 @@
     {
       "name": "ArchDaily",
       "url": "http://www.archdaily.cn/",
+      "domain":"www.archdaily.cn",
       "target": "b",
       "index": 0,
       "img": {
@@ -14,6 +15,7 @@
     {
       "name": "谷德设计网|gooood",
       "url": "http://www.gooood.hk/",
+      "domain":"",
       "target": "b",
       "index": 1,
       "img": {
@@ -25,6 +27,7 @@
     {
       "name": "专筑网",
       "url": "http://www.iarch.cn/",
+      "domain":"",
       "target": "b",
       "index": 2,
       "img": {
@@ -36,6 +39,7 @@
     {
       "name": "在库言库",
       "url": "http://www.ikuku.cn/",
+      "domain":"",
       "target": "b",
       "index": 3,
       "img": {
@@ -47,6 +51,7 @@
     {
       "name": "建筑学院",
       "url": "http://www.archcollege.com/",
+      "domain":"",
       "target": "b",
       "index": 4,
       "img": {
@@ -58,6 +63,7 @@
     {
       "name": "灵感日报",
       "url": "http://www.ideamsg.com/",
+      "domain":"",
       "target": "b",
       "index": 5,
       "img": {
@@ -69,6 +75,7 @@
     {
       "name": "Designboom",
       "url": "http://www.designboom.cn/",
+      "domain":"",
       "target": "b",
       "index": 6,
       "img": {
@@ -80,6 +87,7 @@
     {
       "name": "ArchGo",
       "url": "http://archgo.com/",
+      "domain":"",
       "target": "b",
       "index": 7,
       "img": {
@@ -91,6 +99,7 @@
     {
       "name": "八戒工程",
       "url": "http://gc.zhubajie.com/",
+      "domain":"",
       "target": "b",
       "index": 8,
       "img": {
@@ -102,6 +111,7 @@
     {
       "name": "Nbimer",
       "url": "http://www.nbimer.com/",
+      "domain":"",
       "target": "b",
       "index": 9,
       "img": {
@@ -113,6 +123,7 @@
     {
       "name": "E拓建筑网",
       "url": "http://www.eeeetop.com/",
+      "domain":"",
       "target": "b",
       "index": 10,
       "img": {
@@ -124,6 +135,7 @@
     {
       "name": "E周网",
       "url": "http://ieday.cn/",
+      "domain":"",
       "target": "b",
       "index": 11,
       "img": {
@@ -135,6 +147,7 @@
     {
       "name": "批给屋",
       "url": "http://www.pgive.com/",
+      "domain":"",
       "target": "b",
       "index": 12,
       "img": {
@@ -146,6 +159,7 @@
     {
       "name": "SUBBS",
       "url": "http://www.sketchupbbs.com/",
+      "domain":"",
       "target": "b",
       "index": 13,
       "img": {
@@ -157,6 +171,7 @@
     {
       "name": "建筑报道网",
       "url": "http://www.archreport.com.cn/",
+      "domain":"",
       "target": "b",
       "index": 14,
       "img": {
@@ -168,6 +183,7 @@
     {
       "name": "观筑网",
       "url": "http://www.archain.com/",
+      "domain":"",
       "target": "b",
       "index": 15,
       "img": {
@@ -179,6 +195,7 @@
     {
       "name": "建筑邦",
       "url": "http://www.architbang.com/",
+      "domain":"",
       "target": "b",
       "index": 16,
       "img": {
@@ -190,6 +207,7 @@
     {
       "name": "坯子库",
       "url": "http://www.piziku.com/",
+      "domain":"",
       "target": "b",
       "index": 17,
       "img": {
@@ -201,6 +219,7 @@
     {
       "name": "旅设",
       "url": "http://www.lvshedesign.com/",
+      "domain":"",
       "target": "b",
       "index": 18,
       "img": {
@@ -212,6 +231,7 @@
     {
       "name": "搜建筑",
       "url": "http://www.soujianzhu.cn/",
+      "domain":"",
       "target": "b",
       "index": 19,
       "img": {

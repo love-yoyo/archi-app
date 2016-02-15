@@ -686,10 +686,11 @@ h5.more {
   -o-transition: color 0.2s ease-in;
 }
 .c-nav-tabs li a:hover {
-  border-bottom: 2px solid #1AD1CC;
+  color: #1AD1CC;
 }
 .c-nav-tabs .active a {
   color: #1AD1CC;
+  border-bottom: 2px solid #1AD1CC;
 }
 .c-nav-tabs.bold-font a {
   font-weight: bold;
@@ -767,6 +768,7 @@ h5.more {
 }
 .sub_sample .c-nav-tabs .active a {
   color: #1AD1CC;
+  border-bottom: 2px solid #1AD1CC;
 }
 .sub_sample .top-panel {
   background-color: #ffffff;

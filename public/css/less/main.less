@@ -661,13 +661,15 @@ h5.more{
             .browserPrefix(transition, color 0.2s ease-in);
 
             &:hover{
-                border-bottom: 2px solid @color-green;
+                color: @color-green;
+                // border-bottom: 2px solid @color-green;
             }
         }
     }
     .active {
         a {
             color: @color-green;
+            border-bottom: 2px solid @color-green;
         }
     }
     &.bold-font{
@@ -751,6 +753,7 @@ h5.more{
         .active{
             a{
                 color: @color-green;
+                border-bottom: 2px solid @color-green;
             }
         }
         

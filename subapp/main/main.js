@@ -2,7 +2,8 @@
 var popLogoObj = {
     logo_index:0,
     currentSelectEle:null,
-    crrtLogo:null
+    crrtLogo:null,
+    originLogos:null
 }
 
 //百度搜索
@@ -74,12 +75,12 @@ $(document).ready(function() {
         setObjByName: function(key, obj) {
             store.set(key, obj);
         },
-        setArrByName: function(){
+        setArrByName: function(key, obj) {
             store.set(key, obj);
         },
         getArrByName: function(key) {
             var value = store.get(key);
-            if (!value) {
+            if (!value || !_.isArray(value)) {
                 store.set(key, []);
             }
             return store.get(key);
@@ -95,22 +96,23 @@ $(document).ready(function() {
     /**
      * 添加缓存中的logo
      */
-    var addedObjs = Store.getObjByName(Store.C_ADD) || {};
+    var addedObjs = Store.getArrByName(Store.C_ADD);
     // $("#custom-add-logo").append('<div class="logo"><a href="'+(decodeURI(_url))+'"><img src="" alt="'+_name+'"></a><i class="triangle"></i></div>');
     var _output_html = '';
     _.forEach(addedObjs, function(value, key) {
-        var _url = decodeURI(value.url);
+        var _url = value.url;
         var _name = value.name;
         console.log("name:" + _name);
         _output_html += ('<div class="logo"><a href="' + _url + '"><img src="" alt="' + _name + '"></a><i class="triangle"></i></div>');
     });
     $("#custom-add-logo").append(_output_html);
 
-    var _param = [];
+    /*var _param = [];
     _.forEach(addedObjs, function(val, key) {
         _param.push(val);
     })
-    console.log("++++++++++++");
+    console.log("++++++++++++");*/
+    var _param = addedObjs;
     // console.log(JSON.parse(JSON.stringify(_param)));
     
     /**
@@ -124,8 +126,10 @@ $(document).ready(function() {
     }).success(function(data) {
         console.log("data length:"+data.length);
         // Store.setArrByName(Store.C_ADD,logos);
+        popLogoObj.originLogos = data;
+        var _data = _.clone(data);
         var dataObj = {};
-        _.chain(data)
+        _.chain(_data)
             .map(function(logo){
                 dataObj[logo.index] =  logo;
                 // console.log("test:"+JSON.stringify(dataObj));
@@ -135,9 +139,8 @@ $(document).ready(function() {
             .sortBy("index")
             .map(function(web){
                 console.log(web);
-                web.url = decodeURI(web.url);
+                web.url = web.url;
                 web.target = "b";
-                
                 web.img = {
                     "url": "",
                     "alt": "",
@@ -196,6 +199,22 @@ $(document).ready(function() {
                 } else {
 
                 }
+            },
+            open: function() {
+                console.log("open popoup window");
+                var _offenVisit = Store.getArrByName(Store.OFFEN_VISIT);
+                var _offenVisit = _.chain(_offenVisit).sortBy("num").reverse().value();
+                _offenVisit = _.slice(_offenVisit,0,14);
+                console.log("take:"+JSON.stringify(_offenVisit));
+                $("#pop_offen_nav_items").html(new EJS({
+                    text:'<% for (var i=0;i<offenVisit.length;i++){'
+                            +'var _item = offenVisit[i];'
+                        +'%>'
+                            +'<li data-name="<%=_item.name%>" data-url="<%=_item.url%>"><%=_item.name%></li>'
+                        +'<% } %>'}).render({
+                            offenVisit:_offenVisit
+                        })
+                );
             }
         }
     });
@@ -209,6 +228,9 @@ $(document).ready(function() {
         console.log("been clicked:"+popLogoObj.logo_index);*/
     });
 
+    /**
+     * [Popup window btn click event]
+     */
     $("#popup_submit").click(function() {
         if (!$("#popup_website").val()) {
             alert("网站地址不能为空");
@@ -219,23 +241,47 @@ $(document).ready(function() {
             return
         }
         console.log("submit success index:"+popLogoObj.logo_index);
-        var _url = encodeURI($("#popup_website").val());
+        var _url = $("#popup_website").val();
+        _url = _url.indexOf("http") == 0 ? _url : "http://"+_url;
         var _name = $("#popup_webName").val() || "";
         var _web = {
             "name": _name,
-            "url": "http://"+_url,
+            "url": _url,
+            "domain": _url.replace(/^https?:\/\//,''),
             "index": popLogoObj.logo_index
         };
-
-        Store.addWeb(Store.C_ADD, _url, _web);
-        console.log(Store.getObjByName(Store.C_ADD));
+        
         var _lastIndex = $("#logoContainer").find(".logo-container").last().find(".logo:last").data("index");
         if (popLogoObj.logo_index > _lastIndex) {
-            $("#custom-add-logo").append('<div class="logo"><a href=http://"' + (decodeURI(_url)) + '"><img src="" alt="' + _name + '"></a><i class="triangle"></i></div>');
+            $("#custom-add-logo").append('<div class="logo"><a href="' + _url + '"><img src="" alt="' + _name + '"></a><i class="triangle"></i></div>');
         } else {
-            var _aLink = popLogoObj.currentSelectEle.find("a")
-            _aLink.attr("href",_web.url);
-            _aLink.find("img").attr("alt",_web.name);
+            if ( (popLogoObj.crrtLogo.name==$("#popup_webName").val()) && (popLogoObj.crrtLogo.url==$("#popup_website").val()) ) {
+                alert("请修改网站名称或地址！");
+                return;
+            }
+            var _addWEB = Store.getArrByName(Store.C_ADD);
+            var _find = _.chain(_addWEB).find({url:_url}).value();
+            if (_find) {
+                _find = _web
+            } else {
+                _addWEB.push(_web);
+                Store.setArrByName(Store.C_ADD,_addWEB);
+            }
+            var _crrtSelect = popLogoObj.currentSelectEle;
+            _crrtSelect.html(new EJS({
+                text:'<a href="<%= url %>" target="<%= target %>">'
+                    +'<% if (img && img.url) {%>'
+                    +'<img src="<%= img.url%>" alt="<%=(name||"")%>" >'
+                    +'<% } else {%>'
+                    +'<span class="l-label"><%=(name || "")%></span>'
+                    +'<% } %>'
+                +'</a>'
+                +'<i class="triangle"></i>'}).render({
+                    url: _web.url,
+                    target: "_blank",
+                    name: _web.name,
+                    img:null
+                }));
         }
 
         /**
@@ -243,10 +289,44 @@ $(document).ready(function() {
          */
         $("#popup_webName").val('');
         $("#popup_website").val('');
+        $.magnificPopup.close();
+    });
+    $("#popup_default").click(function(){
+        var _logoIndex = popLogoObj.logo_index;
+        console.log("logoIndex:"+_logoIndex);
+        var _addWeb = Store.getArrByName(Store.C_ADD);
+        if (_addWeb && _.isArray(_addWeb) && _addWeb.length>0) {
+            console.log("start remove");
+            console.log("before:"+JSON.stringify(_addWeb));
+            _.chain(_addWeb).remove({index:parseInt(_logoIndex)}).value();
+            console.log("removeValue:"+JSON.stringify(_addWeb));
+            Store.setArrByName(Store.C_ADD,_addWeb);
+        }
+        var _originLogos = popLogoObj.originLogos;
+        // console.log("originLogo:"+JSON.stringify(_originLogos));
+        var _matchLogo = _originLogos[_logoIndex];
+        console.log("matchLogo:"+JSON.stringify(_matchLogo));
+        var _crrtSelect = popLogoObj.currentSelectEle;
+            _crrtSelect.html(new EJS({
+                text:'<a href="<%= url %>" target="<%= target %>">'
+                        +'<% if (img && img.url) {%>'
+                        +'<img src="<%= img.url%>" alt="<%=(name||"")%>" >'
+                        +'<% } else {%>'
+                        +'<span class="l-label"><%=(name || "")%></span>'
+                        +'<% } %>'
+                    +'</a>'
+                    +'<i class="triangle"></i>'}).render({
+                        url: _matchLogo.url,
+                        target: "_blank",
+                        name: _matchLogo.name,
+                        img:_matchLogo.img
+                    }));
+        $.magnificPopup.close();
     });
     $("#popup_cancle").click(function() {
         $.magnificPopup.close();
     });
+
     $("#popup-menus").delegate("li", "click", function(e) {
         e.preventDefault();
         var _$this = $(this);
@@ -287,6 +367,14 @@ $(document).ready(function() {
         $("#archi-tab-" + (_$this.index())).addClass("active").siblings(".active").removeClass("active");
         // console.log(_$this.html());
     });
+    $("#pop_offen_nav_items").delegate("li","click",function(e){
+        e.preventDefault();
+        var _$this = $(this);
+        _$this.addClass('active').siblings(".active").removeClass('active');
+        $("#popup_webName").val(_$this.data("name"));
+        $("#popup_website").val(_$this.data("url"));
+    });
+
     $("#gotoLeft").click(function() {
         var _container = $("#logoContainer");
         var findDiv = _container.find(".logo-container.active");
@@ -335,6 +423,9 @@ $(document).ready(function() {
         }
     };
 
+    /**
+     * [Edited model]
+     */
     $("#logoContainer").delegate(".triangle", "click", function(e) {
         var _$this = $(this);
         console.log(_$this.html());
@@ -345,17 +436,46 @@ $(document).ready(function() {
         var aLink = _crrtSelect.find("a");
         var img = aLink.find("img");
         var val = img.length > 0 ? img.attr("alt") : aLink.find(".l-label").html();
-        var _url = (aLink.attr("href")+"").replace(/^https?:\/\//,'');
-        /*popLogoObj.crrtLogo = {
+        var _url = (aLink.attr("href")+"");
+        popLogoObj.crrtLogo = {
             "name": val,
-            "url": 
-        }*/
+            "url": _url
+        }
         console.log("val:"+val+" img:"+_url);
         $("#popup_webName").val(val);
         $("#popup_website").val(_url);
         $('.open-popup-link').magnificPopup('open');
         // overlay.show();
     });
+    /**
+     * [recode the time of which link been clicked]
+     */
+    $("#logoContainer").delegate("a","click",function(e){
+        var _this = $(this);
+        var nodeName = e.target.nodeName;
+        console.log(nodeName);
+        var _url = _this.attr("href");
+        _url = _url.indexOf("http")==0 ? _url : "http://"+_url;
+        if (_this.parent(".show-triangle").length<1) {
+            var _offenVisit = Store.getArrByName(Store.OFFEN_VISIT);
+            var _find = _.chain(_offenVisit).find({url:_url}).value();
+            console.log("FIND:"+JSON.stringify(_find));
+            if (_find) {
+                 _find.num ++;
+                 Store.setArrByName(Store.OFFEN_VISIT, _offenVisit);
+            } else {
+                var img = _this.find("img");
+                var name = img.length > 0 ? img.attr("alt") : aLink.find(".l-label").html();
+                _offenVisit.push({
+                    url: _url,
+                    name: name,
+                    num: 0
+                });
+                console.log(JSON.stringify(_offenVisit));
+                Store.setArrByName(Store.OFFEN_VISIT, _offenVisit);
+            }
+        }
+    })
 
     $("#gotoNext").click(function(){
         var _$this = $(this);
