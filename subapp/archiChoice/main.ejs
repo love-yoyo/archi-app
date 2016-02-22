@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>知筑导航--建筑精选</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <style type="text/css">
+        #tiles{
+            position:relative;
+            margin-left: -29px;
+            margin-right: -29px;
+        }
+        #tiles li{
+            display:block;
+            width: 388px;
+            padding: 4px;
+            border: 1px solid #dedede;
+            border-radius: 2px;
+            background-color: #fff;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        #tiles li img{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header role="banner" id="top" class="navbar navbar-static-top bs-docs-nav">
+        <div class="container c-container">
+            <div class="navbar-header">
+                <button aria-expanded="false" aria-controls="bs-navbar" data-target="#bs-navbar" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand archi-logo" href="http://www.archi123.com/"><img data-original="/img/archi-logo.png"></a>
+            </div>
+            <nav class="collapse navbar-collapse" id="bs-navbar">
+                <ul class="nav navbar-nav c-nav">
+                    <li>
+                        <a href="http://www.archi123.com/">首页</a>
+                    </li>
+                    <li>
+                        <a href="">案例精选</a>
+                    </li>
+                    <li>
+                        <a href="">精彩资讯</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">建筑新闻</a></li>
+                            <li><a href="#">竞赛展会</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://wx.archi123.com/" target="_blank">微信导航</a>
+                    </li>
+                    <li class="active">
+                        <a href="">免费资料</a>
+                    </li>
+                    <li>
+                        <a href="">人物访谈</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav c-nav navbar-right">
+                    <li>
+                        <a href="">设为首页</a>
+                    </li>
+                    <li>
+                        <a href="">加入收藏</a>
+                    </li>
+                    <li>
+                        <a href="">旗下网站</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">室内导航</a></li>
+                            <li><a href="#">土木导航</a></li>
+                            <li><a href="#">建筑酷</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contain">
+        <div class="bs-docs-header c-bs-docs-header">
+            <div class="title">案例精选</div>
+        </div>
+    </section>
+    <section class="contain">
+        <ul id="tiles"> 
+            <li><img data-original="/img/post_0.jpg" width="388px" height="200px" class="lazy"><p>text</p></li> 
+            <li><img data-original="/img/post_1.jpg" width="388px" height="350px" class="lazy"><p>text</p></li> 
+            <li><img data-original="/img/post_0.jpg" width="388px" height="400px" class="lazy"><p>text</p></li> 
+            <li><img data-original="/img/post_1.jpg" width="388px" height="400px" class="lazy"><p>text</p></li> 
+            <li><img data-original="/img/post_11.jpg" width="388px" height="580px" class="lazy"><p>text</p></li> 
+            <li><img data-original="/img/post_3.jpg" width="388px" height="320px" class="lazy"><p>text</p></li>
+            <li><img data-original="/img/post_2.jpg" width="388px" height="300px" class="lazy"><p>text</p></li> 
+            <li><img data-original="/img/post_1.jpg" width="388px" height="310px" class="lazy"><p>text</p></li> 
+            <li><img data-original="/img/post_0.jpg" width="388px" height="380px" class="lazy"><p>text</p></li>
+        </ul>
+    </section>
+    <section class="contain">
+        <div class="ad-container"></div>
+    </section>
+    <% include ../footer %>
+</body>
+
+</html>
+<script type="text/javascript" src="/js/lib/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src='/js/lib/bootstrap.min.js'></script>
+<script type="text/javascript" src="/js/lib/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src='/js/lib/imagesloaded.pkgd.min.js'></script>
+<script type="text/javascript" src='/js/lib/wookmark.min.js'></script>
+<script type="text/javascript" src="/js/lib/masonry.pkgd.min.js"></script>
+
+<script type="text/javascript">
+
+(function ($) {
+  var loadedImages = 0, // Counter for loaded images
+    handler = $('#tiles'); // Get a reference to your grid items.
+
+  // Prepare layout options.
+  var options = {
+    align: "center",
+    onLayoutChanged:true,
+    autoResize: true, // This will auto-update the layout when the browser window is resized.
+    offset: 18, // Optional, the distance between grid items
+    outerOffset: 20, // Optional, the distance to the containers border
+    itemWidth: 388 // Optional, the width of a grid item
+  };
+
+  $('#tiles').imagesLoaded(function(){
+    // Call the layout function.
+    handler.wookmark(options);
+
+    // Capture clicks on grid items.
+    handler.click(function(){
+      // Randomize the height of the clicked item.
+      var newHeight = $('img', this).height() + Math.round(Math.random() * 300 + 30);
+      $(this).css('height', newHeight+'px');
+
+      // Update the layout.
+      handler.wookmark();
+    });
+  }).progress(function(instance, image) {
+    // Update progress bar after each image load
+    loadedImages++;
+    if (loadedImages == handler.length)
+      $('.progress-bar').hide();
+    else
+      $('.progress-bar').width((loadedImages / handler.length * 100) + '%');
+  });
+})(jQuery);
+
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("img.lazy").lazyload({effect: "fadeIn"});
+    
+    $(".c-nav-tabs").delegate("li", "click", function(e) {
+        e.preventDefault();
+        var _$this = $(this);
+        _$this.addClass('active').siblings(".active").removeClass('active');
+        console.log(_$this.html());
+    });
+})
+</script>

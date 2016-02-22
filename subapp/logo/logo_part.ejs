@@ -12,12 +12,22 @@ for(var i=0;i<logoArr.length;i++){
         <div class="logo" data-index="<%= count*i+j%>">
             <a href="<%= _logo.url %>" target="<%= _target %>">
                 <% if (_isImg) {%>
-                <img src="<%= _logo.img.url%>" alt="<%=(_logo.name||"")%>" >
+                <img data-original="<%= _logo.img.url%>" alt="<%=(_logo.name||"")%>" class="lazy">
                 <% } else {%>
                 <span class="l-label"><%=(_logo.name || "")%></span>
                 <% } %>
             </a>
             <i class="triangle"></i>
+            <div class="web-preview" data-hover_image="<%=_logo.img.hover_img%>">
+                <img class="preview-img">
+                <div class="title"><%=_logo.img.title%></div>
+                <div class="author">
+                    by&nbsp;<%=_logo.name%>
+                </div>
+                <div class="desc">
+                    <%= _logo.name%>
+                </div>
+            </div>
         </div>
         <%
         }

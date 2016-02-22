@@ -7,7 +7,7 @@
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background: #0b0b0b; 
+  background: rgba(0,0,0,0.5); 
   animation: fadein 0.2s linear;
   -moz-animation: fadein 0.2s linear;
   -webkit-animation: fadein 0.2s linear;

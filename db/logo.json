@@ -9,7 +9,8 @@
       "img": {
         "url": "img/logo/1.png",
         "alt": "",
-        "hover_img": "img/logo_hover1.png"
+        "hover_img": "img/logo_hover/1.png",
+        "title":"世界最受欢迎的建筑网站"
       }
     },
     {
@@ -21,7 +22,8 @@
       "img": {
         "url": "img/logo/2.png",
         "alt": "",
-        "hover_img": "img/logo_hover2.png"
+        "hover_img": "img/logo_hover/2.png",
+        "title":"中国最受欢迎和有影响力的建筑,景观,设计,艺术在线杂志"
       }
     },
     {
@@ -33,7 +35,8 @@
       "img": {
         "url": "img/logo/3.png",
         "alt": "",
-        "hover_img": "img/logo_hover3.png"
+        "hover_img": "img/logo_hover/3.png",
+        "title":"专筑网是为年轻的建筑行业新秀创办的互动交流社区"
       }
     },
     {
@@ -45,7 +48,7 @@
       "img": {
         "url": "img/logo/4.png",
         "alt": "",
-        "hover_img": "img/logo_hover4.png"
+        "hover_img": "img/logo_hover/4.png"
       }
     },
     {
@@ -57,7 +60,7 @@
       "img": {
         "url": "img/logo/5.png",
         "alt": "",
-        "hover_img": "img/logo_hover5.png"
+        "hover_img": "img/logo_hover/5.png"
       }
     },
     {
@@ -69,7 +72,7 @@
       "img": {
         "url": "img/logo/6.png",
         "alt": "",
-        "hover_img": "img/logo_hover6.png"
+        "hover_img": "img/logo_hover/6.png"
       }
     },
     {
@@ -81,7 +84,7 @@
       "img": {
         "url": "img/logo/7.png",
         "alt": "",
-        "hover_img": "img/logo_hover7.png"
+        "hover_img": "img/logo_hover/7.png"
       }
     },
     {
@@ -93,7 +96,7 @@
       "img": {
         "url": "img/logo/8.png",
         "alt": "",
-        "hover_img": "img/logo_hover8.png"
+        "hover_img": "img/logo_hover/8.png"
       }
     },
     {
@@ -105,7 +108,7 @@
       "img": {
         "url": "img/logo/9.png",
         "alt": "",
-        "hover_img": "img/logo_hover9.png"
+        "hover_img": "img/logo_hover/9.png"
       }
     },
     {
@@ -117,7 +120,7 @@
       "img": {
         "url": "img/logo/10.png",
         "alt": "",
-        "hover_img": "img/logo_hover10.png"
+        "hover_img": "img/logo_hover/10.png"
       }
     },
     {
@@ -129,7 +132,7 @@
       "img": {
         "url": "img/logo/11.png",
         "alt": "",
-        "hover_img": "img/logo_hover11.png"
+        "hover_img": "img/logo_hover/11.png"
       }
     },
     {
@@ -141,7 +144,7 @@
       "img": {
         "url": "img/logo/12.png",
         "alt": "",
-        "hover_img": "img/logo_hover12.png"
+        "hover_img": "img/logo_hover/12.png"
       }
     },
     {
@@ -153,7 +156,7 @@
       "img": {
         "url": "img/logo/13.png",
         "alt": "",
-        "hover_img": "img/logo_hover13.png"
+        "hover_img": "img/logo_hover/13.png"
       }
     },
     {
@@ -165,7 +168,7 @@
       "img": {
         "url": "img/logo/14.png",
         "alt": "",
-        "hover_img": "img/logo_hover14.png"
+        "hover_img": "img/logo_hover/14.png"
       }
     },
     {
@@ -177,7 +180,7 @@
       "img": {
         "url": "img/logo/15.png",
         "alt": "",
-        "hover_img": "img/logo_hover15.png"
+        "hover_img": "img/logo_hover/15.png"
       }
     },
     {
@@ -189,7 +192,7 @@
       "img": {
         "url": "img/logo/16.png",
         "alt": "",
-        "hover_img": "img/logo_hover16.png"
+        "hover_img": "img/logo_hover/16.png"
       }
     },
     {
@@ -201,7 +204,7 @@
       "img": {
         "url": "img/logo/17.png",
         "alt": "",
-        "hover_img": "img/logo_hover17.png"
+        "hover_img": "img/logo_hover/17.png"
       }
     },
     {
@@ -213,7 +216,7 @@
       "img": {
         "url": "img/logo/18.png",
         "alt": "",
-        "hover_img": "img/logo_hover18.png"
+        "hover_img": "img/logo_hover/18.png"
       }
     },
     {
@@ -225,7 +228,7 @@
       "img": {
         "url": "img/logo/19.png",
         "alt": "",
-        "hover_img": "img/logo_hover19.png"
+        "hover_img": "img/logo_hover/19.png"
       }
     },
     {
@@ -237,7 +240,7 @@
       "img": {
         "url": "img/logo/20.png",
         "alt": "",
-        "hover_img": "img/logo_hover20.png"
+        "hover_img": "img/logo_hover/20.png"
       }
     },
     {
@@ -248,7 +251,7 @@
       "img": {
         "url": "img/logo/21.png",
         "alt": "",
-        "hover_img": "img/logo_hover21.png"
+        "hover_img": "img/logo_hover/21.png"
       }
     },
     {
@@ -259,7 +262,7 @@
       "img": {
         "url": "img/logo/22.png",
         "alt": "",
-        "hover_img": "img/logo_hover22.png"
+        "hover_img": "img/logo_hover/22.png"
       }
     },
     {
@@ -270,7 +273,7 @@
       "img": {
         "url": "img/logo/23.png",
         "alt": "",
-        "hover_img": "img/logo_hover23.png"
+        "hover_img": "img/logo_hover/23.png"
       }
     },
     {
@@ -281,7 +284,7 @@
       "img": {
         "url": "img/logo/24.png",
         "alt": "",
-        "hover_img": "img/logo_hover24.png"
+        "hover_img": "img/logo_hover/24.png"
       }
     },
     {
@@ -292,7 +295,7 @@
       "img": {
         "url": "img/logo/25.png",
         "alt": "",
-        "hover_img": "img/logo_hover25.png"
+        "hover_img": "img/logo_hover/25.png"
       }
     },
     {
@@ -303,7 +306,7 @@
       "img": {
         "url": "img/logo/26.png",
         "alt": "",
-        "hover_img": "img/logo_hover26.png"
+        "hover_img": "img/logo_hover/26.png"
       }
     },
     {
@@ -314,7 +317,7 @@
       "img": {
         "url": "img/logo/27.png",
         "alt": "",
-        "hover_img": "img/logo_hover27.png"
+        "hover_img": "img/logo_hover/27.png"
       }
     },
     {
@@ -325,7 +328,7 @@
       "img": {
         "url": "img/logo/28.png",
         "alt": "",
-        "hover_img": "img/logo_hover28.png"
+        "hover_img": "img/logo_hover/28.png"
       }
     },
     {
@@ -336,7 +339,7 @@
       "img": {
         "url": "img/logo/29.png",
         "alt": "",
-        "hover_img": "img/logo_hover29.png"
+        "hover_img": "img/logo_hover/29.png"
       }
     },
     {
@@ -347,7 +350,7 @@
       "img": {
         "url": "img/logo/30.png",
         "alt": "",
-        "hover_img": "img/logo_hover30.png"
+        "hover_img": "img/logo_hover/30.png"
       }
     },
     {
@@ -358,7 +361,7 @@
       "img": {
         "url": "img/logo/31.png",
         "alt": "",
-        "hover_img": "img/logo_hover31.png"
+        "hover_img": "img/logo_hover/31.png"
       }
     },
     {
@@ -369,7 +372,7 @@
       "img": {
         "url": "img/logo/32.png",
         "alt": "",
-        "hover_img": "img/logo_hover32.png"
+        "hover_img": "img/logo_hover/32.png"
       }
     },
     {
@@ -380,7 +383,7 @@
       "img": {
         "url": "img/logo/33.png",
         "alt": "",
-        "hover_img": "img/logo_hover33.png"
+        "hover_img": "img/logo_hover/33.png"
       }
     },
     {
@@ -391,7 +394,7 @@
       "img": {
         "url": "img/logo/34.png",
         "alt": "",
-        "hover_img": "img/logo_hover34.png"
+        "hover_img": "img/logo_hover/34.png"
       }
     },
     {
@@ -402,7 +405,7 @@
       "img": {
         "url": "img/logo/35.png",
         "alt": "",
-        "hover_img": "img/logo_hover35.png"
+        "hover_img": "img/logo_hover/35.png"
       }
     },
     {
@@ -413,7 +416,7 @@
       "img": {
         "url": "img/logo/36.png",
         "alt": "",
-        "hover_img": "img/logo_hover36.png"
+        "hover_img": "img/logo_hover/36.png"
       }
     },
     {
@@ -424,7 +427,7 @@
       "img": {
         "url": "img/logo/37.png",
         "alt": "",
-        "hover_img": "img/logo_hover37.png"
+        "hover_img": "img/logo_hover/37.png"
       }
     },
     {
@@ -435,7 +438,7 @@
       "img": {
         "url": "img/logo/38.png",
         "alt": "",
-        "hover_img": "img/logo_hover38.png"
+        "hover_img": "img/logo_hover/38.png"
       }
     },
     {
@@ -446,7 +449,7 @@
       "img": {
         "url": "img/logo/39.png",
         "alt": "",
-        "hover_img": "img/logo_hover39.png"
+        "hover_img": "img/logo_hover/39.png"
       }
     },
     {
@@ -457,7 +460,7 @@
       "img": {
         "url": "img/logo/40.png",
         "alt": "",
-        "hover_img": "img/logo_hover40.png"
+        "hover_img": "img/logo_hover/40.png"
       }
     },
     {
@@ -468,7 +471,7 @@
       "img": {
         "url": "img/logo/41.png",
         "alt": "",
-        "hover_img": "img/logo_hover41.png"
+        "hover_img": "img/logo_hover/41.png"
       }
     },
     {
@@ -479,7 +482,7 @@
       "img": {
         "url": "img/logo/42.png",
         "alt": "",
-        "hover_img": "img/logo_hover42.png"
+        "hover_img": "img/logo_hover/42.png"
       }
     },
     {
@@ -490,7 +493,7 @@
       "img": {
         "url": "img/logo/43.png",
         "alt": "",
-        "hover_img": "img/logo_hover43.png"
+        "hover_img": "img/logo_hover/43.png"
       }
     },
     {
@@ -501,7 +504,7 @@
       "img": {
         "url": "img/logo/44.png",
         "alt": "",
-        "hover_img": "img/logo_hover44.png"
+        "hover_img": "img/logo_hover/44.png"
       }
     },
     {
@@ -512,7 +515,7 @@
       "img": {
         "url": "img/logo/45.png",
         "alt": "",
-        "hover_img": "img/logo_hover45.png"
+        "hover_img": "img/logo_hover/45.png"
       }
     }
   ]

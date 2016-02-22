@@ -1,4 +1,6 @@
 'use strict';
+$("img.lazy").lazyload({effect: "fadeIn"});
+
 var popLogoObj = {
     logo_index:0,
     currentSelectEle:null,
@@ -176,6 +178,46 @@ $(document).ready(function() {
             logoArr: logoArr,
             count: num
         }));
+        var _timing = 0;
+
+        $(".logo").mouseover(function(){
+            console.log("been hover");
+            var _this = $(this);
+            
+            clearTimeout(_timing);
+            _timing = setTimeout(function(){
+                if (!$("#logoContainer").hasClass("show-triangle")) {
+                    var _find = _this.find(".web-preview");
+                    console.log("len:"+_find.find("img").attr("class")+" image:"+_find.data("hover_image"));
+                    _find.find("img").attr("src",_find.data("hover_image"));
+                    var _a = _this.find("a");
+                    var _containerWidth = $("#logoContainer").width();
+                    var _containerHeight = $("#logoContainer").height();
+                    var _left = _a.offset().left;
+                    var _top = _a.offset().top;
+                    var _itemWidth = _a.width();
+                    console.log("left:"+_left+" top:"+_top+" itemWidth:"+_itemWidth+" container:"+_containerWidth);
+                    if (_find.length>0) {
+                        _find.addClass("active");
+                        console.log("der:"+parseFloat(_containerWidth-_left-_itemWidth));
+                        var itemLeft = parseFloat(_containerWidth-_left-_itemWidth)<450 ? -460 : 100;
+                        var itemTop = _containerHeight<400 ? -400 : 0;
+                        _find.css({
+                            left: itemLeft,
+                            top: itemTop
+                        })
+                        
+                    } else {
+                       // _this.append("<div class='web-preview'>"+_this.find("a").attr("href")+"</div>"); 
+                    }
+                } else {
+                    //do nothing
+                }
+            },500);
+        }).mouseout(function(){
+            $(this).find(".web-preview").removeClass('active');
+        });
+        $("img.lazy").lazyload({effect:"fadeIn"});
         console.log("success");
     }).error(function() {
         console.log("error");
@@ -443,7 +485,7 @@ $(document).ready(function() {
         }
         console.log("val:"+val+" img:"+_url);
         $("#popup_webName").val(val);
-        $("#popup_website").val(_url);
+        $("#popup_website").val(_url.replace(/^https?:\/\//,''));
         $('.open-popup-link').magnificPopup('open');
         // overlay.show();
     });
@@ -475,13 +517,14 @@ $(document).ready(function() {
                 Store.setArrByName(Store.OFFEN_VISIT, _offenVisit);
             }
         }
-    })
+    });
 
-    $("#gotoNext").click(function(){
+
+
+    $(".gotoNext").click(function(){
         var _$this = $(this);
         var _body = _$this.parent(".cell").parent('.body');
         var _nextBody = _body.next('.body');
-        console.log(_body);
         console.log("next:"+_nextBody.length);
         if (_nextBody.length > 0) {
             _nextBody.removeClass('hidden');

@@ -1,0 +1,61 @@
+footer {
+    width: 100%;
+    min-height: 150px;
+    display: block;
+    background-color: #333;
+    // background-image: linear-gradient(to bottom, #333333 0px, #444444 100%);
+    // background-repeat: repeat-x;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: @color-white;
+    position: relative;
+    .top{
+        height: 100px; 
+        .foot-logo{
+            padding-right: 20px;
+        }
+        .line{
+            position: relative;
+            margin-left: 10px;
+            margin-right: 10px;
+            &:after{
+                content: '';
+                position: absolute;
+                display: block;
+                height: 54px;
+                top: 50%;
+                left: 0;
+                bottom: 0;
+                border-left: 1px solid @color-80;
+                .browserPrefix(transform,translateY(-50%));
+            }
+        }
+        .qq-icon{
+            margin-left: 20px;
+        }
+    }
+    .content{
+        color: @color-84
+    }
+    a {
+        color: @color-white !important;
+    }
+    .title{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .copy-right {
+        margin-top: 30px;
+    }
+    .footer-logo{
+        &:before{
+            content: url(../img/archi-logo.png);
+            display: block;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: -50%;
+            top: -50%;
+            .browserPrefix(transform,translateY(70%));
+        }
+    }
+}

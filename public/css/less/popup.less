@@ -1,0 +1,151 @@
+.white-popup-block{
+    position: relative;
+    background: #FFF;
+    padding: 32px;
+    width: auto;
+    max-width: 628px;
+    margin: 20px auto;
+}
+
+
+.pop-menu{
+    margin-top: -32px;
+    margin-left: -32px;
+    margin-right: -32px;
+    background-color: @color-green;
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    li{
+        display: inline-block;
+        float: left;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &.active{
+            background-color: @color-white;
+        }
+        &:not(:last-child){
+            width:130px;
+        }
+        input[type='text']{
+            padding-left: 10px;
+            padding-right: 10px;
+            outline: none;
+            border: none;
+            padding-top: 0;
+            padding-bottom: 0
+        }
+        .title{
+            color: @color-white;
+            padding-left: 32px;
+        }
+    }
+    .has-input{
+        position: relative;
+        input{
+            position: absolute;
+            left: 20px;
+            padding-top: 3px;
+        }
+    }
+}
+.pop-menu-container{
+    display: none;
+    height: 276px;
+    &.active{
+        display: block;
+    }
+}
+
+.pop-header{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    .right{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        span{
+            margin-right: 10px;
+        }
+        input[type='text']{
+            width: 300px;
+        }
+    }
+    input[type='text']{
+        padding-left: 10px;
+        padding-right: 10px;
+        outline: none;
+        width: 150px;
+    }
+}
+.pop-nav{
+    width: 100%;
+    .title{
+        margin-bottom: 0;
+        li{
+            display: inline-block;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 100%;
+            float: left;
+            background-color: @color-f5;
+            .browserPrefix(transition,all 0.2s ease-out);
+            &.active{
+                background-color: @color-green;
+                color: @color-white;
+            }
+        }
+        &:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+    .pop-nav-body{
+        height: 150px;
+        padding-top: 0px;
+        background-color: @color-fa;
+        overflow-y: auto;
+        display: none;
+        &.active{
+            display: block;
+        }
+        li{
+            padding: 1px 10px;
+            height: 18px;
+            line-height: 18px;
+            &.active{
+                background-color: @color-f0;
+            }
+        }
+    }
+}
+.pop-btn-group{
+    text-align: center;
+    margin-top: 15px;
+    input[type='button']{
+        padding: 5px 30px;
+        color: @color-white;
+        border: none;
+        outline: none;
+    }
+    .dft-btn{
+        float: left;
+        background-color: @color-cb;
+    }
+    .right-btn{
+        float: right;
+    }
+    .ok-btn{
+        margin-right: 50px !important;
+        background-color: @color-green;
+    }
+    .cancle-btn{
+        background-color: @color-cb;
+    }
+}
