@@ -181,11 +181,13 @@ $(document).ready(function() {
         var _timing = 0;
 
         $(".logo").mouseover(function(){
+
             console.log("been hover");
             var _this = $(this);
             
             clearTimeout(_timing);
             _timing = setTimeout(function(){
+                console.log("previewLength:"+$(".web-preview.active").length);
                 if (!$("#logoContainer").hasClass("show-triangle")) {
                     var _find = _this.find(".web-preview");
                     console.log("len:"+_find.find("img").attr("class")+" image:"+_find.data("hover_image"));
@@ -200,7 +202,7 @@ $(document).ready(function() {
                     if (_find.length>0) {
                         _find.addClass("active");
                         console.log("der:"+parseFloat(_containerWidth-_left-_itemWidth));
-                        var itemLeft = parseFloat(_containerWidth-_left-_itemWidth)<450 ? -460 : 100;
+                        var itemLeft = parseFloat(_containerWidth-_left-_itemWidth)<350 ? -360 : 100;
                         var itemTop = _containerHeight<400 ? -400 : 0;
                         _find.css({
                             left: itemLeft,
@@ -215,7 +217,16 @@ $(document).ready(function() {
                 }
             },500);
         }).mouseout(function(){
-            $(this).find(".web-preview").removeClass('active');
+            
+            setTimeout(function(){
+                $(".web-preview.active").removeClass("active");
+            },500)
+            
+        });
+
+        $("#logoContainer").mouseout(function(){
+
+            $(".web-preview.active").removeClass("active");
         });
         $("img.lazy").lazyload({effect:"fadeIn"});
         console.log("success");
