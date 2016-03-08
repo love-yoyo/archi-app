@@ -1,0 +1,135 @@
+.tool-cate-contain{
+    margin-top: 20px;
+    margin-left: -20px;
+    &:after{
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        clear: both;
+    }
+}
+.tool-cate{
+    float: left;
+    width: 20%;
+    height: 100%;
+    
+    min-width: 100px;
+    padding-left: 20px;
+    color: @color-white;
+    &:nth-child(1){
+        .content{
+            background-color: rgb(241,137,94); 
+        }
+        
+    }
+    &:nth-child(2){
+        .content{
+            background-color: rgb(218,185,106);
+        }
+    }
+    &:nth-child(3){
+        .content{
+            background-color: rgb(216,217,218);
+        }
+    }
+    &:nth-child(4){
+        .content{
+            background-color: rgb(237,115,106);
+        }
+    }
+    &:nth-child(5){
+        .content{
+            background-color: rgb(118,189,221);
+        }
+    }
+    .content{
+        background-color: orange;
+        text-align: center;
+        width: 100%;
+        display: block;
+        .title{
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+.doc-title{
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+.docs-contain{
+    overflow: hidden;
+    margin-left: -20px;
+    .doc{
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        .img-wrap{
+            height: 200px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            a{
+                width: 100%;
+                height: 100%;
+                display: block;
+                img{
+                    .browserPrefix(transition,transform 0.3s);
+                    width: 400px;
+                }
+            }
+            .hoverImg{
+                position: absolute;
+                bottom: 0;
+                height: 40px;
+                line-height: 40px;
+                padding-left: 10px;
+                left: 0;
+                width: 100%;
+                opacity: 0;
+                color: @color-white;
+                background-color: @color-black;
+                .browserPrefix(transition,opacity 0.3s);
+            }
+
+            &:hover{
+                img{
+                   .browserPrefix(transform,scale(1.2)); 
+                }
+                .hoverImg{
+                    opacity: 0.5;
+                }
+            }
+        }
+        .desc{
+            padding-top: 10px;
+            height: 60px;
+            padding-left: 10px;
+        }
+    }
+}
+.doc-ad-container{
+    height: 200px;
+    outline: 1px solid #000;
+    margin-bottom: 80px;
+}
+
+
+
+
+

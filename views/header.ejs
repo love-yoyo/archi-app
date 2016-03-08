@@ -1,10 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>知筑导航</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-</head>
+<header role="banner" id="top" class="navbar navbar-static-top bs-docs-nav">
+    <div class="container c-container">
+        <div class="navbar-header">
+            <button aria-expanded="false" aria-controls="bs-navbar" data-target="#bs-navbar" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand archi-logo" href="http://www.archi123.com/"><img src="/img/archi-logo.png"></a>
+        </div>
+        <nav class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="nav navbar-nav c-nav">
+                <li>
+                    <a href="http://www.archi123.com/">首页</a>
+                </li>
+                <li>
+                    <a href="/ac/main.html" target="_blank">案例精选</a>
+                </li>
+                <li>
+                    <a href="">精彩资讯</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="" target="_blank">建筑新闻</a></li>
+                        <li><a href="" target="_blank">竞赛展会</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/wcg/main.html" target="_blank">微信导航</a>
+                </li>
+                <li class="active">
+                    <a href="/fd/main.html" target="_blank">免费资料</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav c-nav navbar-right">
+                <li>
+                    <a href="#" onclick="AddFavorite(window.location,document.title)" class="addCollection">加入收藏</a>
+                </li>
+                <li>
+                    <a href="">旗下网站</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">室内导航</a></li>
+                        <li><a href="#">土木导航</a></li>
+                        <li><a href="#">建筑酷</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

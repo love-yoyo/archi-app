@@ -9,10 +9,39 @@ footer {
     padding-bottom: 20px;
     color: @color-white;
     position: relative;
+    font-size: 12px;
     .top{
         height: 100px; 
         .foot-logo{
             padding-right: 20px;
+            display: inline-block;
+            position: relative;
+            &:hover{
+                cursor: pointer;
+                .desc{
+                    display: block;
+                    opacity: 1;
+                }
+            }
+            .desc{
+                border-radius: 6px;
+                width: 420px;
+                vertical-align: middle;
+                margin-left: 22px;
+                color: @color-84;
+                background-color: @color-42;
+                padding: 10px 16px;
+                text-align: left;
+                position: absolute;
+                top: 50%;
+                left: 100%;
+                display: none;
+                margin-left: 40px;
+                opacity: 0;
+                z-index: 10;
+                .browserPrefix(transform, translateY(-50%));
+                // .browserPrefix(transition,all 0.3s);
+            }
         }
         .line{
             position: relative;
@@ -32,10 +61,31 @@ footer {
         }
         .qq-icon{
             margin-left: 20px;
+            display: inline-block;
         }
+        .wechat-icon{
+            position: relative;
+            &:hover{
+                .wechat-hover{
+                    display: block;
+                }
+            }
+            .wechat-hover{
+                position: absolute;
+                display: none;
+                top: 50%;
+                left: 100%;
+                margin-left: 20px;
+                .browserPrefix(transform,translateY(-50%));
+            }
+        }
+        
+    }
+    .btm{
+        // margin-top: 30px;
     }
     .content{
-        color: @color-84
+        color: @color-84;
     }
     a {
         color: @color-white !important;

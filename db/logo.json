@@ -383,7 +383,7 @@
       "img": {
         "url": "img/logo/33.png",
         "alt": "",
-        "hover_img": "img/logo_hover/33.png"
+        "hover_img": "img/logo_hover/33.jpg"
       }
     },
     {
@@ -516,6 +516,17 @@
         "url": "img/logo/45.png",
         "alt": "",
         "hover_img": "img/logo_hover/45.png"
+      }
+    },
+    {
+      "name": "Archidogs",
+      "url": "http://www.archidogs.com/",
+      "target": "b",
+      "index": 45,
+      "img": {
+        "url": "img/logo/46.png",
+        "alt": "",
+        "hover_img": "img/logo_hover/46.png"
       }
     }
   ]

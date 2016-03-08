@@ -1,0 +1,58 @@
+.archiNews-contain{
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid @color-e0;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+    margin-bottom: 200px;
+    li{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid @color-e0;
+        a{
+            display: block;
+            position: relative;
+            overflow: hidden;
+            &:after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+        }
+        .img-wrap{
+            width: 200px;
+            height: 150px;
+            float: left;
+            overflow: hidden;
+            margin-right: 20px;
+            img{
+                width: 200px;
+                .browserPrefix(transition,transform 0.3s 0.1s);
+            }
+            &:hover{
+                img{
+                   .browserPrefix(transform,scale(1.2)); 
+                }
+            }
+        }
+        .news-content{
+            // float: left;
+            color: @color-36;
+            .title{
+                font-size: 20px;
+            }
+            .content{
+                font-size: 14px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .n-label{
+                color: @color-80;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}

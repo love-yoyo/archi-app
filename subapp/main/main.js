@@ -1,5 +1,10 @@
 'use strict';
-$("img.lazy").lazyload({effect: "fadeIn"});
+$("img.lazy").lazyload({
+    effect: "fadeIn", 
+    threshold : 100,
+    placeholder: "/img/loding.gif",
+    skip_invisible : false
+});
 
 var popLogoObj = {
     logo_index:0,
@@ -57,10 +62,19 @@ $(document).ready(function() {
      * 初始化链接的翻页
      * @type {Swiper}
      */
-    var swiper = new Swiper('.swiper-friendLinks', {
-        pagination: '.swiper-pagination',
+    new Swiper('.ad-container .swiper-container', {
+        pagination: '.swiper-pagination-1',
         paginationClickable: true,
-        spaceBetween: 13,
+        autoplay: 3000,
+        autoplayDisableOnInteraction: false
+    });
+
+    new Swiper('.swiper-friendLinks', {
+        pagination: '.swiper-pagination-2',
+        paginationClickable: true,
+        spaceBetween: 6,
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false
     });
 
     var Store = {
@@ -228,7 +242,12 @@ $(document).ready(function() {
 
             $(".web-preview.active").removeClass("active");
         });
-        $("img.lazy").lazyload({effect:"fadeIn"});
+        $("#logoContainer img.lazy").lazyload({
+            effect:"fadeIn", 
+            threshold : 100,
+            placeholder: "/img/loding.gif",
+            skip_invisible : false
+        });
         console.log("success");
     }).error(function() {
         console.log("error");
@@ -538,7 +557,8 @@ $(document).ready(function() {
         var _nextBody = _body.next('.body');
         console.log("next:"+_nextBody.length);
         if (_nextBody.length > 0) {
-            _nextBody.removeClass('hidden');
+            _$this.toggleClass('active');
+            _nextBody.toggleClass('hidden');
         }
     });
 
@@ -546,4 +566,47 @@ $(document).ready(function() {
         overlay.hide();
     });
 
+    $("#searchBtn").click(function(){
+        var _this = $(this);
+        var _left = _this.offset().left;
+        console.log(_left);
+        var _menu = _this.siblings(".dropdown-menu");
+        _menu.css({
+            display:"block",
+            left: _left+"px"
+        })
+    });
+
+    $("#searchBtn+.dropdown-menu").delegate("li","click",function(){
+        var _this = $(this);
+        var _val = _this.find("a").html().trim();
+        $("#searchBtn").val(_val);
+        $(".dropdown-menu").css({
+            display: "none"
+        });
+        var _map = {
+            "百度":{
+                url:"https://www.baidu.com/baidu",
+                qName:"word"
+            },
+            "搜狗":{
+                url:"https://www.sogou.com/web",
+                qName:"query"
+            },
+            "谷歌":{
+                url:"https://www.google.com/search",
+                qName:"q"
+            },
+            "淘宝":{
+                url:"https://s.taobao.com/search",
+                qName:"q"
+            }
+        }
+        $("#searchBtn").parent("form").attr("action",_map[_val].url);
+        $("#searchBtn").siblings('.s-middle-input').attr("name",_map[_val].qName);
+    });
+    $("#searchBtn+.dropdown-menu li").hover(function(){
+        var _this = $(this);
+        $("#searchBtn").val(_this.find("a").html().trim());
+    });
 })

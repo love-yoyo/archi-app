@@ -4,6 +4,9 @@
     margin: auto;
     padding-left: @l-r-padding;
     padding-right: @l-r-padding;
+    a{
+        text-decoration: blink !important;
+    }
 }
 
 
@@ -15,5 +18,197 @@
         height: 100%;
         font-size: 30px;
 
+    }
+}
+.wcg-cate{
+    width: 100%;
+    overflow: hidden;
+    li{
+        float: left;
+        width: 10%;
+        a{
+            width: 100%;
+            display: block;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            color: @color-white;
+        }
+        &:hover{
+            background-color: @color-green;
+        }
+    }
+
+    .active{
+        a{
+            background-color: @color-green;
+        }
+    }
+}
+.wcg-logo{
+    width: 100%;
+    overflow: hidden;
+    li{
+        float: left;
+        width: 10%;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        a{
+            display: inline-block;
+            text-align: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 1px solid @color-green;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                
+            }
+        }
+    }
+}
+
+.wechatInfoPanel{
+    overflow: hidden;
+}
+.wcg-leftPanel{
+    float: left;
+    clear: right;
+    overflow: hidden;
+    margin-top: 50px;
+    max-width: 850px;
+    .wcg-gird{
+        float: left;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        overflow: hidden;
+        .left{
+            float: left;
+            margin-right: 20px;
+            img{
+                display: block;
+                width: 100px;
+                height: 100px;
+                border: 1px solid @color-e0;
+            }
+            .nickName{
+                width: 100%;
+                margin-top: 20px;
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+        .right{
+            float: left;
+        }
+    }
+}
+
+.right{
+    .img-wrap{
+        height: 200px;
+        width: 260px;
+        overflow: hidden;
+        position: relative;
+        a{
+            width: 100%;
+            height: 100%;
+            display: block;
+            img{
+                .browserPrefix(transition,transform 0.3s);
+                width: 400px;
+            }
+        }
+        .hoverImg{
+            position: absolute;
+            bottom: 0;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 10px;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            color: @color-white;
+            background-color: @color-black;
+            .browserPrefix(transition,opacity 0.3s);
+        }
+
+        &:hover{
+            img{
+               .browserPrefix(transform,scale(1.2)); 
+            }
+            .hoverImg{
+                opacity: 0.5;
+            }
+        }
+    }
+    .desc{
+        padding-top: 10px;
+        height: 60px;
+        padding-left: 10px;
+    }
+
+}
+.wcg-rightPanel{
+    float: right;
+    margin-top: 50px;
+    width: 250px;
+    >.title{
+        height: 50px;
+        line-height: 50px;
+        background-color: @color-green;
+        color: @color-white;
+        font-size:20px;
+        width: 100%;
+        text-align: center;
+    }
+    .popular-board{
+        counter-reset:sectioncounter;
+        li{
+            margin-top: 20px;
+            position: relative;
+            &:before{
+                content: counter(sectioncounter);
+                counter-increment:sectioncounter;
+                display: block;
+                position: absolute;
+                font-size: 30px;
+                left: -80px;
+                top: 0;
+                width: 50px;
+                text-align: right;
+            }
+
+        }
+        a{
+            img{
+                width: 100px;
+                height: 100px;
+                float: left;
+            }
+            .desc-contain{
+                margin-left: 20px;
+                height: 100px;
+                float: left;
+                min-width: 80px;
+                >.title{
+                    color: @color-black;
+                }
+                >.desc{
+                    color: @color-80;
+                }
+            }
+            &:after{
+                content: '';
+                display: block;
+                clear: both;
+                width: 0;
+                height: 0;
+            }
+        }
     }
 }

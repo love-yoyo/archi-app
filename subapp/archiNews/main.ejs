@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>知筑导航--建筑新闻</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    <% include ../header %>
+        <section class="contain">
+            <div class="bs-docs-header c-bs-docs-header">
+                <div class="title">建筑新闻</div>
+            </div>
+        </section>
+        <section class="contain">
+            <ul class="archiNews-contain">
+                <li>
+                    <a href="">
+                        <div class="img-wrap">
+                            <img alt="" data-original="/img/post_1.jpg" class="lazy">
+                        </div>
+                        <div class="news-content">
+                            <div class="title">这是一段标题</div>
+                            <div class="content">这是很长很长的一段描述这是很长很长的一段描述这是很长很长的一段描述这是很长很长的一段描述这是很长很长的一段描述这是很长很长的一段描述这是很长很长的一段描述这是很长很长的一段描述这是很长很长的一段描述这是很长很长的一段描述这是很长很长的一段描述这是很长很长的一段描述这是很长很长的一段描述这是很长很长的一段描述这是很长很长的一段描述</div>
+                            <div class="n-label">2016年12月20日</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="img-wrap">
+                            <img alt="" data-original="/img/post_1.jpg" class="lazy">
+                        </div>
+                        <div class="news-content">
+                            <div class="title">这是一段标题</div>
+                            <div class="content">这是很长很长的一段描述</div>
+                            <div class="n-label">2016年12月20日</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="img-wrap">
+                            <img alt="" data-original="/img/post_1.jpg" class="lazy">
+                        </div>
+                        <div class="news-content">
+                            <div class="title">这是一段标题</div>
+                            <div class="content">这是很长很长的一段描述</div>
+                            <div class="n-label">2016年12月20日</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="img-wrap">
+                            <img alt="" data-original="/img/post_1.jpg" class="lazy">
+                        </div>
+                        <div class="news-content">
+                            <div class="title">这是一段标题</div>
+                            <div class="content">这是很长很长的一段描述</div>
+                            <div class="n-label">2016年12月20日</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="img-wrap">
+                            <img alt="" data-original="/img/post_1.jpg" class="lazy">
+                        </div>
+                        <div class="news-content">
+                            <div class="title">这是一段标题</div>
+                            <div class="content">这是很长很长的一段描述</div>
+                            <div class="n-label">2016年12月20日</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <% include ../footer %>
+</body>
+
+</html>
+<script type="text/javascript" src="/js/lib/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src='/js/lib/bootstrap.min.js'></script>
+<script type="text/javascript" src="/js/lib/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("img.lazy").lazyload({
+        effect: "fadeIn",
+        placeholder: "/img/archi-logo.png"
+    });
+})
+</script>

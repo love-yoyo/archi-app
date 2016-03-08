@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>知筑导航--建筑精选</title>
+    <title>精选案例，最专业的建筑行业精选案例(知筑导航)</title> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="keywords" content="Archi123,建筑案例,案例导航,建筑导航,建筑微信号,建筑网址,建筑网站,建筑网址之家,知筑导航,知筑,案例123,设计机构,设计资讯,建筑资讯,技术论坛,资源下载,建筑设计,灵感导航,BIM导航,建筑灵感,建筑界网址,建筑学,建筑设计院,免费建筑资料,互联网+建筑,建筑学网站">
+    <meta name="description" content="微信导航，最专业的建筑行业微信号导航(知筑导航，最专业的建筑行业网址导航)。将建筑类微信公众号一网打尽，持续收录中。定期分享免费建筑资料，组织建筑界同城活动，打造新型建筑师之家。" >
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <style type="text/css">
@@ -30,61 +33,7 @@
 </head>
 
 <body>
-    <header role="banner" id="top" class="navbar navbar-static-top bs-docs-nav">
-        <div class="container c-container">
-            <div class="navbar-header">
-                <button aria-expanded="false" aria-controls="bs-navbar" data-target="#bs-navbar" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand archi-logo" href="http://www.archi123.com/"><img data-original="/img/archi-logo.png"></a>
-            </div>
-            <nav class="collapse navbar-collapse" id="bs-navbar">
-                <ul class="nav navbar-nav c-nav">
-                    <li>
-                        <a href="http://www.archi123.com/">首页</a>
-                    </li>
-                    <li>
-                        <a href="">案例精选</a>
-                    </li>
-                    <li>
-                        <a href="">精彩资讯</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">建筑新闻</a></li>
-                            <li><a href="#">竞赛展会</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="http://wx.archi123.com/" target="_blank">微信导航</a>
-                    </li>
-                    <li class="active">
-                        <a href="">免费资料</a>
-                    </li>
-                    <li>
-                        <a href="">人物访谈</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav c-nav navbar-right">
-                    <li>
-                        <a href="">设为首页</a>
-                    </li>
-                    <li>
-                        <a href="">加入收藏</a>
-                    </li>
-                    <li>
-                        <a href="">旗下网站</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">室内导航</a></li>
-                            <li><a href="#">土木导航</a></li>
-                            <li><a href="#">建筑酷</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <% include ../header %>
     <section class="contain">
         <div class="bs-docs-header c-bs-docs-header">
             <div class="title">案例精选</div>
@@ -159,7 +108,7 @@
 </script>
 <script type="text/javascript">
 $(document).ready(function() {
-    $("img.lazy").lazyload({effect: "fadeIn"});
+    $("img.lazy").lazyload({effect: "fadeIn",placeholder: "/img/archi-logo.png"});
     
     $(".c-nav-tabs").delegate("li", "click", function(e) {
         e.preventDefault();
