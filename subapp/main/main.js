@@ -1,10 +1,13 @@
 'use strict';
-$("img.lazy").lazyload({
+/*$("img.lazy").lazyload({
     effect: "fadeIn", 
     threshold : 100,
     placeholder: "/img/loding.gif",
     skip_invisible : false
 });
+*//*$("img.lazy").unveil();*/
+
+var isLife = false;
 
 var popLogoObj = {
     logo_index:0,
@@ -58,11 +61,22 @@ function SetHome(obj, vrl) {
     }
 }
 $(document).ready(function() {
+    setTimeout(function(){
+        $("img.lazy").lazyload({
+            effect: "fadeIn", 
+            // placeholder: "/img/loding.gif",
+            placeholder: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC",
+            failure_limit : 10,
+            skip_invisible : false
+        });
+    },1500);
+    
+
     /**
      * 初始化链接的翻页
      * @type {Swiper}
      */
-    new Swiper('.ad-container .swiper-container', {
+    new Swiper('.ad-container-1 .swiper-container', {
         pagination: '.swiper-pagination-1',
         paginationClickable: true,
         autoplay: 3000,
@@ -79,8 +93,16 @@ $(document).ready(function() {
 
     var Store = {
         C_ADD: "c_add",
+        C_ADD_LIFE: "c_add_life",
         ALL_WEB: "allWeb",
         OFFEN_VISIT: "offenVist",
+        OFFEN_VISIT_LIFE: "offenVistLife",
+        getAddKey: function(){
+            return isLife ? Store.C_ADD_LIFE : Store.C_ADD
+        },
+        getOffenVisitKey: function(){
+            return isLife ? Store.OFFEN_VISIT_LIFE : Store.OFFEN_VISIT
+        },
         getObjByName: function(key) {
             var value = store.get(key);
             if (!value) {
@@ -110,36 +132,15 @@ $(document).ready(function() {
     };
 
     /**
-     * 添加缓存中的logo
-     */
-    var addedObjs = Store.getArrByName(Store.C_ADD);
-    // $("#custom-add-logo").append('<div class="logo"><a href="'+(decodeURI(_url))+'"><img src="" alt="'+_name+'"></a><i class="triangle"></i></div>');
-    var _output_html = '';
-    _.forEach(addedObjs, function(value, key) {
-        var _url = value.url;
-        var _name = value.name;
-        console.log("name:" + _name);
-        _output_html += ('<div class="logo"><a href="' + _url + '"><img src="" alt="' + _name + '"></a><i class="triangle"></i></div>');
-    });
-    $("#custom-add-logo").append(_output_html);
-
-    /*var _param = [];
-    _.forEach(addedObjs, function(val, key) {
-        _param.push(val);
-    })
-    console.log("++++++++++++");*/
-    var _param = addedObjs;
-    // console.log(JSON.parse(JSON.stringify(_param)));
-    
-    /**
      * 获取logo
      */
     $.ajax({
         url: '/logo/all',
         type: 'POST',
         contentType: "application/json;charset=UTF-8",
-        data: JSON.stringify(_param)
+        data: ""
     }).success(function(data) {
+        isLife = false;
         console.log("data length:"+data.length);
         // Store.setArrByName(Store.C_ADD,logos);
         popLogoObj.originLogos = data;
@@ -150,7 +151,7 @@ $(document).ready(function() {
                 dataObj[logo.index] =  logo;
                 // console.log("test:"+JSON.stringify(dataObj));
             }).value();
-
+        var addedObjs = Store.getArrByName(Store.getAddKey());
         var storeVal = _.chain(addedObjs)
             .sortBy("index")
             .map(function(web){
@@ -239,15 +240,17 @@ $(document).ready(function() {
         });
 
         $("#logoContainer").mouseout(function(){
-
             $(".web-preview.active").removeClass("active");
         });
         $("#logoContainer img.lazy").lazyload({
             effect:"fadeIn", 
-            threshold : 100,
-            placeholder: "/img/loding.gif",
+            // placeholder: "/img/loding.gif",
+            placeholder: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC",
+            failure_limit : 10,
             skip_invisible : false
         });
+        
+        /*$("img.lazy").unveil();*/
         console.log("success");
     }).error(function() {
         console.log("error");
@@ -274,7 +277,7 @@ $(document).ready(function() {
             },
             open: function() {
                 console.log("open popoup window");
-                var _offenVisit = Store.getArrByName(Store.OFFEN_VISIT);
+                var _offenVisit = Store.getArrByName(Store.getOffenVisitKey());
                 var _offenVisit = _.chain(_offenVisit).sortBy("num").reverse().value();
                 _offenVisit = _.slice(_offenVisit,0,14);
                 console.log("take:"+JSON.stringify(_offenVisit));
@@ -331,13 +334,13 @@ $(document).ready(function() {
                 alert("请修改网站名称或地址！");
                 return;
             }
-            var _addWEB = Store.getArrByName(Store.C_ADD);
+            var _addWEB = Store.getArrByName(Store.getAddKey());
             var _find = _.chain(_addWEB).find({url:_url}).value();
             if (_find) {
                 _find = _web
             } else {
                 _addWEB.push(_web);
-                Store.setArrByName(Store.C_ADD,_addWEB);
+                Store.setArrByName(Store.getAddKey(),_addWEB);
             }
             var _crrtSelect = popLogoObj.currentSelectEle;
             _crrtSelect.html(new EJS({
@@ -366,13 +369,13 @@ $(document).ready(function() {
     $("#popup_default").click(function(){
         var _logoIndex = popLogoObj.logo_index;
         console.log("logoIndex:"+_logoIndex);
-        var _addWeb = Store.getArrByName(Store.C_ADD);
+        var _addWeb = Store.getArrByName(Store.getAddKey());
         if (_addWeb && _.isArray(_addWeb) && _addWeb.length>0) {
             console.log("start remove");
             console.log("before:"+JSON.stringify(_addWeb));
             _.chain(_addWeb).remove({index:parseInt(_logoIndex)}).value();
             console.log("removeValue:"+JSON.stringify(_addWeb));
-            Store.setArrByName(Store.C_ADD,_addWeb);
+            Store.setArrByName(Store.getAddKey(),_addWeb);
         }
         var _originLogos = popLogoObj.originLogos;
         // console.log("originLogo:"+JSON.stringify(_originLogos));
@@ -431,12 +434,20 @@ $(document).ready(function() {
         _$this.addClass('active').siblings(".active").removeClass('active');
         $("#sub_sample-tab-" + (_$this.index())).addClass("active").siblings(".active").removeClass("active");
     });
-    $("#websites").delegate("li", "click", function(e) {
+    $("#archi_websites").delegate("li", "click", function(e) {
         e.preventDefault();
         var _$this = $(this);
         // console.log(_$this.index());
         _$this.addClass('active').siblings(".active").removeClass('active');
         $("#archi-tab-" + (_$this.index())).addClass("active").siblings(".active").removeClass("active");
+        // console.log(_$this.html());
+    });
+    $("#life_websites").delegate("li", "click", function(e) {
+        e.preventDefault();
+        var _$this = $(this);
+        // console.log(_$this.index());
+        _$this.addClass('active').siblings(".active").removeClass('active');
+        $("#life-tab-" + (_$this.index())).addClass("active").siblings(".active").removeClass("active");
         // console.log(_$this.html());
     });
     $("#pop_offen_nav_items").delegate("li","click",function(e){
@@ -529,12 +540,12 @@ $(document).ready(function() {
         var _url = _this.attr("href");
         _url = _url.indexOf("http")==0 ? _url : "http://"+_url;
         if (_this.parent(".show-triangle").length<1) {
-            var _offenVisit = Store.getArrByName(Store.OFFEN_VISIT);
+            var _offenVisit = Store.getArrByName(Store.getOffenVisitKey());
             var _find = _.chain(_offenVisit).find({url:_url}).value();
             console.log("FIND:"+JSON.stringify(_find));
             if (_find) {
                  _find.num ++;
-                 Store.setArrByName(Store.OFFEN_VISIT, _offenVisit);
+                 Store.setArrByName(Store.getOffenVisitKey(), _offenVisit);
             } else {
                 var img = _this.find("img");
                 var name = img.length > 0 ? img.attr("alt") : aLink.find(".l-label").html();
@@ -544,7 +555,7 @@ $(document).ready(function() {
                     num: 0
                 });
                 console.log(JSON.stringify(_offenVisit));
-                Store.setArrByName(Store.OFFEN_VISIT, _offenVisit);
+                Store.setArrByName(Store.getOffenVisitKey(), _offenVisit);
             }
         }
     });
@@ -566,7 +577,7 @@ $(document).ready(function() {
         overlay.hide();
     });
 
-    $("#searchBtn").click(function(){
+    $("#searchBtn").hover(function(){
         var _this = $(this);
         var _left = _this.offset().left;
         console.log(_left);
@@ -593,6 +604,10 @@ $(document).ready(function() {
                 url:"https://www.sogou.com/web",
                 qName:"query"
             },
+            "必应":{
+                url:"https://www.bing.com/search",
+                qName:"q"
+            },
             "谷歌":{
                 url:"https://www.google.com/search",
                 qName:"q"
@@ -605,8 +620,276 @@ $(document).ready(function() {
         $("#searchBtn").parent("form").attr("action",_map[_val].url);
         $("#searchBtn").siblings('.s-middle-input').attr("name",_map[_val].qName);
     });
-    $("#searchBtn+.dropdown-menu li").hover(function(){
+    /*$("#searchBtn+.dropdown-menu li").hover(function(){
         var _this = $(this);
         $("#searchBtn").val(_this.find("a").html().trim());
+    });*/
+    $("#searchBtn+.dropdown-menu").hover(function(){
+
+    },function(){
+        $(this).hide();
     });
-})
+
+
+    /**
+     * 生活导航
+     */
+    $("#lifeGuideBtn").click(function(){
+        $.ajax({
+            url: '/logo/life/all',
+            type: 'POST',
+            contentType: "application/json;charset=UTF-8",
+            data: ""
+        }).success(function(data) {
+            isLife = true;
+            $("#lifeGuideBtn").addClass('hidden');
+            $("#archiGuideBtn").removeClass('hidden');
+            $("#archiWebsiteSection").addClass('hidden');
+            $("#lifeWebsiteSection").removeClass('hidden');
+
+            console.log("data length:"+data.length);
+            // Store.setArrByName(Store.C_ADD,logos);
+            popLogoObj.originLogos = data;
+            var _data = _.clone(data);
+            var dataObj = {};
+            _.chain(_data)
+                .map(function(logo){
+                    dataObj[logo.index] =  logo;
+                    // console.log("test:"+JSON.stringify(dataObj));
+                }).value();
+            var addedObjs = Store.getArrByName(Store.getAddKey());
+            var storeVal = _.chain(addedObjs)
+            .sortBy("index")
+            .map(function(web){
+                console.log(web);
+                web.url = web.url;
+                web.target = "b";
+                web.img = {
+                    "url": "",
+                    "alt": "",
+                    "hover_img": ""
+                };
+                dataObj[web.index] = web;
+            })
+            .value();
+            var _constructLogo = function(logos, num) {
+                var _logoArr = [],
+                    len = logos.length,
+                    a = Math.floor(len / num),
+                    b = len % num;
+
+                for (var i = 1; i <= a; i++) {
+                    var logo_part = logos.slice(num * (i - 1), num * i);
+                    _logoArr.push(logo_part);
+                }
+                if (b > 0) {
+                    _logoArr.push(logos.slice(len - b, len));
+                }
+                return _logoArr;
+            };
+            var num = 36;
+            var logoArr = _constructLogo(_.values(dataObj), num);
+            console.log("length:"+logoArr.length);
+
+            $("#logoContainer").html(new EJS({
+                url: 'views/logo/logo_part.ejs'
+            }).render({
+                logoArr: logoArr,
+                count: num
+            }));
+            var _timing = 0;
+
+            $(".logo").mouseover(function(){
+
+                console.log("been hover");
+                var _this = $(this);
+                
+                clearTimeout(_timing);
+                _timing = setTimeout(function(){
+                    console.log("previewLength:"+$(".web-preview.active").length);
+                    if (!$("#logoContainer").hasClass("show-triangle")) {
+                        var _find = _this.find(".web-preview");
+                        console.log("len:"+_find.find("img").attr("class")+" image:"+_find.data("hover_image"));
+                        _find.find("img").attr("src",_find.data("hover_image"));
+                        var _a = _this.find("a");
+                        var _containerWidth = $("#logoContainer").width();
+                        var _containerHeight = $("#logoContainer").height();
+                        var _left = _a.offset().left;
+                        var _top = _a.offset().top;
+                        var _itemWidth = _a.width();
+                        console.log("left:"+_left+" top:"+_top+" itemWidth:"+_itemWidth+" container:"+_containerWidth);
+                        if (_find.length>0) {
+                            _find.addClass("active");
+                            console.log("der:"+parseFloat(_containerWidth-_left-_itemWidth));
+                            var itemLeft = parseFloat(_containerWidth-_left-_itemWidth)<350 ? -360 : 100;
+                            var itemTop = _containerHeight<400 ? -400 : 0;
+                            _find.css({
+                                left: itemLeft,
+                                top: itemTop
+                            })
+                            
+                        } else {
+                           // _this.append("<div class='web-preview'>"+_this.find("a").attr("href")+"</div>"); 
+                        }
+                    } else {
+                        //do nothing
+                    }
+                },500);
+            }).mouseout(function(){
+                
+                setTimeout(function(){
+                    $(".web-preview.active").removeClass("active");
+                },500)
+                
+            });
+
+            $("#logoContainer").mouseout(function(){
+
+                $(".web-preview.active").removeClass("active");
+            });
+            $("#logoContainer img.lazy").lazyload({
+                effect:"fadeIn", 
+                failure_limit : 10,
+                placeholder: "/img/loding.gif",
+                skip_invisible : false
+            });
+            console.log("success");
+        }).error(function() {
+            console.log("error");
+        }).complete(function() {
+            console.log("complete");
+        });
+    });
+
+    /**
+     * 建筑导航
+     */
+    $("#archiGuideBtn").click(function(){
+        $.ajax({
+            url: '/logo/all',
+            type: 'POST',
+            contentType: "application/json;charset=UTF-8",
+            data: ""
+        }).success(function(data) {
+            isLife = false;
+            $("#lifeGuideBtn").removeClass('hidden');
+            $("#archiGuideBtn").addClass('hidden');
+            $("#archiWebsiteSection").removeClass('hidden');
+            $("#lifeWebsiteSection").addClass('hidden');
+
+            console.log("data length:"+data.length);
+            // Store.setArrByName(Store.C_ADD,logos);
+            popLogoObj.originLogos = data;
+            var _data = _.clone(data);
+            var dataObj = {};
+            _.chain(_data)
+                .map(function(logo){
+                    dataObj[logo.index] =  logo;
+                    // console.log("test:"+JSON.stringify(dataObj));
+                }).value();
+            var addedObjs = Store.getArrByName(Store.getAddKey());
+            var storeVal = _.chain(addedObjs)
+                            .sortBy("index")
+                            .map(function(web){
+                                console.log(web);
+                                web.url = web.url;
+                                web.target = "b";
+                                web.img = {
+                                    "url": "",
+                                    "alt": "",
+                                    "hover_img": ""
+                                };
+                                dataObj[web.index] = web;
+                            })
+                            .value();
+            var _constructLogo = function(logos, num) {
+                var _logoArr = [],
+                    len = logos.length,
+                    a = Math.floor(len / num),
+                    b = len % num;
+
+                for (var i = 1; i <= a; i++) {
+                    var logo_part = logos.slice(num * (i - 1), num * i);
+                    _logoArr.push(logo_part);
+                }
+                if (b > 0) {
+                    _logoArr.push(logos.slice(len - b, len));
+                }
+                return _logoArr;
+            };
+            var num = 36;
+            var logoArr = _constructLogo(_.values(dataObj), num);
+            console.log("length:"+logoArr.length);
+
+            $("#logoContainer").html(new EJS({
+                url: 'views/logo/logo_part.ejs'
+            }).render({
+                logoArr: logoArr,
+                count: num
+            }));
+            var _timing = 0;
+
+            $(".logo").mouseover(function(){
+
+                console.log("been hover");
+                var _this = $(this);
+                
+                clearTimeout(_timing);
+                _timing = setTimeout(function(){
+                    console.log("previewLength:"+$(".web-preview.active").length);
+                    if (!$("#logoContainer").hasClass("show-triangle")) {
+                        var _find = _this.find(".web-preview");
+                        console.log("len:"+_find.find("img").attr("class")+" image:"+_find.data("hover_image"));
+                        _find.find("img").attr("src",_find.data("hover_image"));
+                        var _a = _this.find("a");
+                        var _containerWidth = $("#logoContainer").width();
+                        var _containerHeight = $("#logoContainer").height();
+                        var _left = _a.offset().left;
+                        var _top = _a.offset().top;
+                        var _itemWidth = _a.width();
+                        console.log("left:"+_left+" top:"+_top+" itemWidth:"+_itemWidth+" container:"+_containerWidth);
+                        if (_find.length>0) {
+                            _find.addClass("active");
+                            console.log("der:"+parseFloat(_containerWidth-_left-_itemWidth));
+                            var itemLeft = parseFloat(_containerWidth-_left-_itemWidth)<350 ? -360 : 100;
+                            var itemTop = _containerHeight<400 ? -400 : 0;
+                            _find.css({
+                                left: itemLeft,
+                                top: itemTop
+                            })
+                            
+                        } else {
+                           // _this.append("<div class='web-preview'>"+_this.find("a").attr("href")+"</div>"); 
+                        }
+                    } else {
+                        //do nothing
+                    }
+                },500);
+            }).mouseout(function(){
+                
+                setTimeout(function(){
+                    $(".web-preview.active").removeClass("active");
+                },500)
+                
+            });
+
+            $("#logoContainer").mouseout(function(){
+
+                $(".web-preview.active").removeClass("active");
+            });
+            $("#logoContainer img.lazy").lazyload({
+                effect:"fadeIn", 
+                failure_limit : 10,
+                placeholder: "/img/loding.gif",
+                skip_invisible : false
+            });
+            console.log("success");
+        }).error(function() {
+            console.log("error");
+        }).complete(function() {
+            console.log("complete");
+        });
+    });
+
+});
+

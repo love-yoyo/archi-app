@@ -140,27 +140,15 @@ router.post('/all', function(req, res) {
     return;*/
 });
 
-router.get('/h5/document', function(req, res) {
-    res.redirect('/docs/h5/document/hello');
-});
-
-
-router.get('/h5/document/*', function(req, res) {
-    var pathName = url.parse(req.url).pathname;
-    console.log('pathname:' + pathName);
-    var pathArr = pathName.split('/');
-
-    var jsondata = fs.readFileSync(path.join(__dirname, '../dist/json/doc/' + pathArr[pathArr.length - 1] + '.json'));
-    var refactData = function(data) {
-        var _keys = {};
-        var jsonObj = JSON.parse(data);
-        return jsonObj;
-    };
-    console.log(jsondata);
-    var _data = refactData(jsondata);
-    console.log(JSON.stringify(_data));
-    res.render('h5-doc-tpl', _data);
-    // res.send('test');
+router.post('/life/all',function(req, res){
+    let _param = req.body;
+    let r_logos = null;
+    const db = low('db/logo_life.json', {
+        storage
+    });
+    r_logos = _.clone(db("logos").chain().value());
+    res.send(r_logos);
+    return;
 });
 
 module.exports = router;

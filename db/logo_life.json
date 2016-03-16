@@ -1,0 +1,474 @@
+{
+  "logos": [
+    {
+      "name": "百度",
+      "url": "https://www.baidu.com/",
+      "domain":"www.archdaily.cn",
+      "target": "b",
+      "index": 0,
+      "img": {
+        "url": "img/logo_life/1.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/1.png",
+        "title":"百度一下，你就知道"
+      }
+    },
+    {
+      "name": "腾讯",
+      "url": "http://www.qq.com/",
+      "domain":"",
+      "target": "b",
+      "index": 1,
+      "img": {
+        "url": "img/logo_life/2.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/2.png",
+        "title":"中国浏览量最大的中文门户网站"
+      }
+    },
+    {
+      "name": "淘宝网",
+      "url": "https://www.taobao.com/",
+      "domain":"",
+      "target": "b",
+      "index": 2,
+      "img": {
+        "url": "img/logo_life/3.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/3.png",
+        "title":"淘！我喜欢！"
+      }
+    },
+    {
+      "name": "天猫",
+      "url": "https://www.tmall.com/",
+      "domain":"",
+      "target": "b",
+      "index": 3,
+      "img": {
+        "url": "img/logo_life/4.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/4.png",
+        "title":"上天猫，就够了！"
+      }
+    },
+    {
+      "name": "聚划算",
+      "url": "https://ju.taobao.com/",
+      "domain":"",
+      "target": "b",
+      "index": 4,
+      "img": {
+        "url": "img/logo_life/5.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/5.png",
+        "title":"无所不能聚"
+      }
+    },
+    {
+      "name": "京东商城",
+      "url": "http://www.jd.com/",
+      "domain":"",
+      "target": "b",
+      "index": 5,
+      "img": {
+        "url": "img/logo_life/6.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/6.png",
+        "title":"综合网购首选"
+      }
+    },
+    {
+      "name": "唯品会",
+      "url": "http://www.vip.com/",
+      "domain":"",
+      "target": "b",
+      "index": 6,
+      "img": {
+        "url": "img/logo_life/7.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/7.png",
+        "title":"一家专门做特卖的网站"
+      }
+    },
+    {
+      "name": "1号店",
+      "url": "http://www.yhd.com/",
+      "domain":"",
+      "target": "b",
+      "index": 7,
+      "img": {
+        "url": "img/logo_life/8.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/8.png",
+        "title":"网上超市1号店,省力省钱省时间"
+      }
+    },
+    {
+      "name": "当当网",
+      "url": "http://www.dangdang.com/",
+      "domain":"",
+      "target": "b",
+      "index": 8,
+      "img": {
+        "url": "img/logo_life/9.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/9.jpg"
+      }
+    },
+    {
+      "name": "腾讯视频",
+      "url": "http://v.qq.com/",
+      "domain":"",
+      "target": "b",
+      "index": 9,
+      "img": {
+        "url": "img/logo_life/10.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/10.jpg"
+      }
+    },
+    {
+      "name": "爱奇艺高清",
+      "url": "http://www.iqiyi.com/",
+      "domain":"",
+      "target": "b",
+      "index": 10,
+      "img": {
+        "url": "img/logo_life/11.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/11.png"
+      }
+    },
+    {
+      "name": "PPTV聚力",
+      "url": "http://www.pptv.com/",
+      "domain":"",
+      "target": "b",
+      "index": 11,
+      "img": {
+        "url": "img/logo_life/12.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/12.jpg"
+      }
+    },
+    {
+      "name": "优酷网",
+      "url": "http://www.youku.com/",
+      "domain":"",
+      "target": "b",
+      "index": 12,
+      "img": {
+        "url": "img/logo_life/13.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/13.png"
+      }
+    },
+    {
+      "name": "亚马逊",
+      "url": "http://www.amazon.cn/",
+      "domain":"",
+      "target": "b",
+      "index": 13,
+      "img": {
+        "url": "img/logo_life/14.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/14.jpg"
+      }
+    },
+    {
+      "name": "蘑菇街",
+      "url": "http://www.mogujie.com/",
+      "domain":"",
+      "target": "b",
+      "index": 14,
+      "img": {
+        "url": "img/logo_life/15.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/15.png"
+      }
+    },
+    {
+      "name": "美团网",
+      "url": "http://www.meituan.com/",
+      "domain":"",
+      "target": "b",
+      "index": 15,
+      "img": {
+        "url": "img/logo_life/16.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/16.png"
+      }
+    },
+    {
+      "name": "国美在线",
+      "url": "http://www.gome.com.cn/",
+      "domain":"",
+      "target": "b",
+      "index": 16,
+      "img": {
+        "url": "img/logo_life/17.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/17.jpg"
+      }
+    },
+    {
+      "name": "苏宁易购",
+      "url": "http://www.suning.com/",
+      "domain":"",
+      "target": "b",
+      "index": 17,
+      "img": {
+        "url": "img/logo_life/18.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/18.jpg"
+      }
+    },
+    {
+      "name": "新浪",
+      "url": "http://www.sina.com.cn/",
+      "domain":"",
+      "target": "b",
+      "index": 18,
+      "img": {
+        "url": "img/logo_life/19.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/19.png"
+      }
+    },
+    {
+      "name": "搜狐",
+      "url": "http://www.sohu.com/",
+      "domain":"",
+      "target": "b",
+      "index": 19,
+      "img": {
+        "url": "img/logo_life/20.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/20.png"
+      }
+    },
+    {
+      "name": "网易",
+      "url": "http://www.163.com/",
+      "target": "b",
+      "index": 20,
+      "img": {
+        "url": "img/logo_life/21.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/21.png"
+      }
+    },
+    {
+      "name": "凤凰",
+      "url": "http://www.ifeng.com/",
+      "target": "b",
+      "index": 21,
+      "img": {
+        "url": "img/logo_life/22.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/22.png"
+      }
+    },
+    {
+      "name": "新华网",
+      "url": "http://www.xinhuanet.com/",
+      "target": "b",
+      "index": 22,
+      "img": {
+        "url": "img/logo_life/23.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/23.png"
+      }
+    },
+    {
+      "name": "人民网",
+      "url": "http://www.people.com.cn/",
+      "target": "b",
+      "index": 23,
+      "img": {
+        "url": "img/logo_life/24.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/24.png"
+      }
+    },
+    {
+      "name": "东方财富网",
+      "url": "http://www.eastmoney.com/",
+      "target": "b",
+      "index": 24,
+      "img": {
+        "url": "img/logo_life/25.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/25.png",
+        "title":"中国财经第一门户"
+      }
+    },
+    {
+      "name": "知乎",
+      "url": "http://www.zhihu.com/",
+      "target": "b",
+      "index": 25,
+      "img": {
+        "url": "img/logo_life/26.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/26.png"
+      }
+    },
+    {
+      "name": "汽车之家",
+      "url": "http://www.autohome.com.cn/",
+      "target": "b",
+      "index": 26,
+      "img": {
+        "url": "img/logo_life/27.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/27.png"
+      }
+    },
+    {
+      "name": "58同城",
+      "url": "http://www.58.com/",
+      "target": "b",
+      "index": 27,
+      "img": {
+        "url": "img/logo_life/28.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/28.png"
+      }
+    },
+    {
+      "name": "赶集网",
+      "url": "http://www.ganji.com/",
+      "target": "b",
+      "index": 28,
+      "img": {
+        "url": "img/logo_life/29.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/29.png"
+      }
+    },
+    {
+      "name": "百姓网",
+      "url": "http://www.baixing.com/",
+      "target": "b",
+      "index": 29,
+      "img": {
+        "url": "img/logo_life/30.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/30.png"
+      }
+    },
+    {
+      "name": "智联招聘",
+      "url": "http://www.zhaopin.com/",
+      "target": "b",
+      "index": 30,
+      "img": {
+        "url": "img/logo_life/31.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/31.png",
+        "title":"好工作上智联招聘"
+      }
+    },
+    {
+      "name": "铁路12306",
+      "url": "http://www.12306.cn/",
+      "target": "b",
+      "index": 31,
+      "img": {
+        "url": "img/logo_life/32.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/32.png"
+      }
+    },
+    {
+      "name": "携程网",
+      "url": "http://www.ctrip.com/",
+      "target": "b",
+      "index": 32,
+      "img": {
+        "url": "img/logo_life/33.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/33.jpg"
+      }
+    },
+    {
+      "name": "世纪佳缘",
+      "url": "http://www.jiayuan.com/",
+      "target": "b",
+      "index": 33,
+      "img": {
+        "url": "img/logo_life/34.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/34.png"
+      }
+    },
+    {
+      "name": "搜房网",
+      "url": "http://www.fang.com/",
+      "target": "b",
+      "index": 34,
+      "img": {
+        "url": "img/logo_life/35.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/35.png"
+      }
+    },
+    {
+      "name": "安居客房产",
+      "url": "http://www.anjuke.com/",
+      "target": "b",
+      "index": 35,
+      "img": {
+        "url": "img/logo_life/36.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/36.png"
+      }
+    },
+    {
+      "name": "去哪儿网",
+      "url": "http://www.qunar.com/",
+      "target": "b",
+      "index": 36,
+      "img": {
+        "url": "img/logo_life/37.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/37.png"
+      }
+    },
+    {
+      "name": "同程旅游",
+      "url": "http://www.ly.com/",
+      "target": "b",
+      "index": 37,
+      "img": {
+        "url": "img/logo_life/38.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/38.png"
+      }
+    },
+    {
+      "name": "途牛旅游网",
+      "url": "http://www.tuniu.com/",
+      "target": "b",
+      "index": 38,
+      "img": {
+        "url": "img/logo_life/39.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/39.jpg"
+      }
+    },
+    {
+      "name": "艺龙酒店",
+      "url": "http://www.elong.com/",
+      "target": "b",
+      "index": 39,
+      "img": {
+        "url": "img/logo_life/40.png",
+        "alt": "",
+        "hover_img": "img/logo_life_hover/40.png"
+      }
+    }
+  ]
+}

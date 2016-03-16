@@ -56,382 +56,148 @@
     <section class="contain">
         <a class="doc-title" name="allDocs">文本合集</a>
         <div class="docs-contain">
+            <% 
+                for(var i=0;i<allDocs.length;i++){ 
+                    var item = allDocs[i];
+            %>
             <div class="doc">
                 <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
+                    <a href="<%= item.url%>" target="_blank">
+                        <img data-original="<%= item.img%>" class="lazy">
                     </a>
                     <div class="hoverImg">
-                        这是一段简短的描述
+                        <%= item.hoverDesc%>
                     </div>
                 </div>
                 <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
+                    <div class="title"><%= item.title%></div>
+                    <div class><%= item.desc%></div>
                 </div>
             </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
+            <%}%>
         </div>
-        <div class="doc-ad-container"></div>
+        <div class="doc-ad-container">
+            <a href="http://toutiao.archi123.com/" target="_blank">
+                <img data-original="/img/ad_imgs/ad_jianzhutoutiao.jpg" class="lazy"/>
+            </a>
+        </div>
     </section>
     <section class="contain">
         <a class="doc-title" name="selectPictures">精选图纸</a>
         <div class="docs-contain">
+            <% 
+                for(var i=0;i<selectPictures.length;i++){ 
+                    var item = selectPictures[i];
+            %>
             <div class="doc">
                 <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
+                    <a href="<%= item.url%>" target="_blank">
+                        <img data-original="<%= item.img%>" class="lazy">
                     </a>
                     <div class="hoverImg">
-                        这是一段简短的描述
+                        <%= item.hoverDesc%>
                     </div>
                 </div>
                 <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
+                    <div class="title"><%= item.title%></div>
+                    <div class><%= item.desc%></div>
                 </div>
             </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
+            <%}%>
         </div>
-        <div class="doc-ad-container"></div>
+        <div class="doc-ad-container">
+            <a href="http://www.archidogs.com/" target="_blank">
+                <img data-original="/img/ad_imgs/ad_jianzhuku.jpg" class="lazy"/>
+            </a>
+        </div>
     </section>
     <section class="contain">
         <a class="doc-title" name="allModels">模型合集</a>
         <div class="docs-contain">
+            <% 
+                for(var i=0;i<allModels.length;i++){ 
+                    var item = allModels[i];
+            %>
             <div class="doc">
                 <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
+                    <a href="<%= item.url%>" target="_blank">
+                        <img data-original="<%= item.img%>" class="lazy">
                     </a>
                     <div class="hoverImg">
-                        这是一段简短的描述
+                        <%= item.hoverDesc%>
                     </div>
                 </div>
                 <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
+                    <div class="title"><%= item.title%></div>
+                    <div class><%= item.desc%></div>
                 </div>
             </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
+            <%}%>
+            
         </div>
-        <div class="doc-ad-container"></div>
+        <div class="doc-ad-container">
+            <a href="http://www.archi123.com/" target="_blank">
+                <img data-original="/img/ad_imgs/ad_wait.jpg" class="lazy"/>
+            </a>
+        </div>
     </section>
     <section class="contain">
         <a class="doc-title" name="selectMaterial">精选素材</a>
         <div class="docs-contain">
+            <% 
+                for(var i=0;i<selectMaterial.length;i++){ 
+                    var item = selectMaterial[i];
+            %>
             <div class="doc">
                 <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
+                    <a href="<%= item.url%>" target="_blank">
+                        <img data-original="<%= item.img%>" class="lazy">
                     </a>
                     <div class="hoverImg">
-                        这是一段简短的描述
+                        <%= item.hoverDesc%>
                     </div>
                 </div>
                 <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
+                    <div class="title"><%= item.title%></div>
+                    <div class><%= item.desc%></div>
                 </div>
             </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
+            <%}%>
         </div>
-        <div class="doc-ad-container"></div>
+        <div class="doc-ad-container">
+            <a href="http://www.archi123.com/" target="_blank">
+                <img data-original="/img/ad_imgs/ad_wait.jpg" class="lazy"/>
+            </a>
+        </div>
     </section>
     <section class="contain">
         <a class="doc-title" name="softwareCourse">软件教程</a>
         <div class="docs-contain">
+            <% 
+                for(var i=0;i<softwareCourse.length;i++){ 
+                    var item = softwareCourse[i];
+            %>
             <div class="doc">
                 <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
+                    <a href="<%= item.url%>" target="_blank">
+                        <img data-original="<%= item.img%>" class="lazy">
                     </a>
                     <div class="hoverImg">
-                        这是一段简短的描述
+                        <%= item.hoverDesc%>
                     </div>
                 </div>
                 <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
+                    <div class="title"><%= item.title%></div>
+                    <div class><%= item.desc%></div>
                 </div>
             </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
-            <div class="doc">
-                <div class="img-wrap">
-                    <a>
-                        <img data-original="/img/post_11.jpg" class="lazy">
-                    </a>
-                    <div class="hoverImg">
-                        这是一段简短的描述
-                    </div>
-                </div>
-                <div class="desc">
-                    <div class="title">上海美术馆</div>
-                    <div class>上海美术馆是一座很漂亮的馆</div>
-                </div>
-            </div>
+            <%}%>
         </div>
-        <div class="doc-ad-container"></div>
+        <div class="doc-ad-container">
+            <a href="http://www.archi123.com/" target="_blank">
+                <img data-original="/img/ad_imgs/ad_wait.jpg" class="lazy"/>
+            </a>
+        </div>
     </section>
 
     <% include ../footer %>

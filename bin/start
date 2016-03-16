@@ -7,12 +7,21 @@
 var app = require('../app');
 var debug = require('debug')('archi-app:server');
 var http = require('http');
+var os = require('os');
 
 /**
  * handle arguments from command line
  */
 var args = process.argv.splice(2);
-var addr = "";
+var addr = (function getLocalIp(){
+    /**
+     * get default IP
+     */
+    var ifaces = os.networkInterfaces();
+    // console.log(ifaces);
+    var _local = ifaces['本地连接'] || ifaces['无线网络连接'] || ifaces['en0'] || ifaces['en6'] || [{address:"127.0.0.1"}];
+    return _local[_local.length-1]['address'];
+})();
 var _port = '3000';
 for (var i=0;i<args.length;i++) {
   var _arg = args[i];

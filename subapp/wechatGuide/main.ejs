@@ -6,6 +6,7 @@
     <title>微信导航，最专业的建筑行业微信号导航(知筑导航)</title> 
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta name="keywords" content="Archi123,微信导航,建筑导航,建筑微信号,建筑网址,建筑网站,建筑网址之家,知筑导航,知筑,微信123,设计机构,设计资讯,建筑资讯,建筑论坛,技术论坛,资源下载,建筑设计,灵感导航,BIM导航,建筑灵感,建筑界网址,建筑学,建筑设计院,免费建筑资料,互联网+建筑,建筑学网站">
     <meta name="description" content="微信导航，最专业的建筑行业微信号导航(知筑导航，最专业的建筑行业网址导航)。将建筑类微信公众号一网打尽，持续收录中。定期分享免费建筑资料，组织建筑界同城活动，打造新型建筑师之家。" >
@@ -21,16 +22,15 @@
         <section class="full-width bg-black">
             <section class="contain">
                 <ul class="wcg-cate">
-                    <li class="active"><a href="">分类</a></li>
-                    <li><a href="">分类</a></li>
-                    <li><a href="">分类</a></li>
-                    <li><a href="">分类</a></li>
-                    <li><a href="">分类</a></li>
-                    <li><a href="">分类</a></li>
-                    <li><a href="">分类</a></li>
-                    <li><a href="">分类</a></li>
-                    <li><a href="">分类</a></li>
-                    <li><a href="">分类</a></li>
+                    <li class="active"><a href="">最火微信</a></li>
+                    <li><a href="">期刊杂志</a></li>
+                    <li><a href="">赏析资讯</a></li>
+                    <li><a href="">建筑趣谈</a></li>
+                    <li><a href="">展览旅行</a></li>
+                    <li><a href="">设计创意</a></li>
+                    <li><a href="">设计机构</a></li>
+                    <li><a href="">干货分享</a></li>
+                    <li><a href="">教程干货</a></li>
                 </ul>
             </section>
         </section>
@@ -421,8 +421,36 @@
                 </section>
             </section>
         </section>
-        <section class="contain">
-            <div class="ad-container"></div>
+        <section class="section">
+            <div class="ad-container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="http://www.uzing.net/" target="_blank">
+                                <img data-original="/img/ad_imgs/ad_huoli.jpg" class="lazy" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="http://www.archidogs.com/" target="_blank">
+                                <img data-original="/img/ad_imgs/ad_jianzhuku.jpg" class="lazy"/>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="http://toutiao.archi123.com/" target="_blank">
+                                <img data-original="/img/ad_imgs/ad_jianzhutoutiao.jpg" class="lazy"/>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="http://www.archi123.com/" target="_blank">
+                                <img data-original="/img/ad_imgs/ad_wait.jpg" class="lazy"/>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-1"></div>
+                </div>
+            </div>
         </section>
         <% include ../footer %>
 </body>
@@ -431,8 +459,16 @@
 <script type="text/javascript" src="/js/lib/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src='/js/lib/bootstrap.min.js'></script>
 <script type="text/javascript" src="/js/lib/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="/js/lib/swiper.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
+    new Swiper('.ad-container .swiper-container', {
+        pagination: '.swiper-pagination-1',
+        paginationClickable: true,
+        autoplay: 3000,
+        autoplayDisableOnInteraction: false
+    });
+
     $("img.lazy").lazyload({
         placeholder: "/img/archi-logo.png",
         effect: "fadeIn"

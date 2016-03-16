@@ -2,7 +2,7 @@
   "logos": [
     {
       "name": "ArchDaily",
-      "url": "http://www.archdaily.cn/",
+      "url": "http://www.archdaily.cn",
       "domain":"www.archdaily.cn",
       "target": "b",
       "index": 0,
@@ -15,7 +15,7 @@
     },
     {
       "name": "谷德设计网|gooood",
-      "url": "http://www.gooood.hk/",
+      "url": "http://www.gooood.hk",
       "domain":"",
       "target": "b",
       "index": 1,
@@ -28,7 +28,7 @@
     },
     {
       "name": "专筑网",
-      "url": "http://www.iarch.cn/",
+      "url": "http://www.iarch.cn",
       "domain":"",
       "target": "b",
       "index": 2,
@@ -41,62 +41,67 @@
     },
     {
       "name": "在库言库",
-      "url": "http://www.ikuku.cn/",
+      "url": "http://www.ikuku.cn",
       "domain":"",
       "target": "b",
       "index": 3,
       "img": {
         "url": "img/logo/4.png",
         "alt": "",
-        "hover_img": "img/logo_hover/4.png"
+        "hover_img": "img/logo_hover/4.png",
+        "title":"ikuku.cn|在库言库:成立于2012年1月 以公益为目的的 中..."
       }
     },
     {
       "name": "建筑学院",
-      "url": "http://www.archcollege.com/",
+      "url": "http://www.archcollege.com",
       "domain":"",
       "target": "b",
       "index": 4,
       "img": {
         "url": "img/logo/5.png",
         "alt": "",
-        "hover_img": "img/logo_hover/5.png"
+        "hover_img": "img/logo_hover/5.png",
+        "title":"我们塑造了建筑，建筑亦塑造了我们"
       }
     },
     {
       "name": "灵感日报",
-      "url": "http://www.ideamsg.com/",
+      "url": "http://www.ideamsg.com",
       "domain":"",
       "target": "b",
       "index": 5,
       "img": {
         "url": "img/logo/6.png",
         "alt": "",
-        "hover_img": "img/logo_hover/6.png"
+        "hover_img": "img/logo_hover/6.png",
+        "title":"灵感日报热衷分享全球最新创意、设计、艺术等相关内容"
       }
     },
     {
       "name": "Designboom",
-      "url": "http://www.designboom.cn/",
+      "url": "http://www.designboom.cn",
       "domain":"",
       "target": "b",
       "index": 6,
       "img": {
         "url": "img/logo/7.png",
         "alt": "",
-        "hover_img": "img/logo_hover/7.png"
+        "hover_img": "img/logo_hover/7.png",
+        "title":"Designboom是全球最早和最受欢迎的建筑、工业、科技、艺术、时尚和视觉设计类的数字媒体，也是世界排名第一的综合艺术设计媒体。"
       }
     },
     {
       "name": "ArchGo",
-      "url": "http://archgo.com/",
+      "url": "http://archgo.com",
       "domain":"",
       "target": "b",
       "index": 7,
       "img": {
         "url": "img/logo/8.png",
         "alt": "",
-        "hover_img": "img/logo_hover/8.png"
+        "hover_img": "img/logo_hover/8.png",
+        "title":"ArchGo! 世界优秀建筑到您的桌面"
       }
     },
     {
@@ -108,425 +113,463 @@
       "img": {
         "url": "img/logo/9.png",
         "alt": "",
-        "hover_img": "img/logo_hover/9.png"
+        "hover_img": "img/logo_hover/9.png",
+        "title":"八戒工程-国内领先的工程师外包平台-猪八戒工程网"
       }
     },
     {
       "name": "Nbimer",
-      "url": "http://www.nbimer.com/",
+      "url": "http://www.nbimer.com",
       "domain":"",
       "target": "b",
       "index": 9,
       "img": {
         "url": "img/logo/10.png",
         "alt": "",
-        "hover_img": "img/logo_hover/10.png"
+        "hover_img": "img/logo_hover/10.png",
+        "title":"互联网+建筑设计的平台"
       }
     },
     {
       "name": "E拓建筑网",
-      "url": "http://www.eeeetop.com/",
+      "url": "http://www.eeeetop.com",
       "domain":"",
       "target": "b",
       "index": 10,
       "img": {
         "url": "img/logo/11.png",
         "alt": "",
-        "hover_img": "img/logo_hover/11.png"
+        "hover_img": "img/logo_hover/11.png",
+        "title":"E拓建筑网|拓筑学院 - 中国最贴近建筑学子与年轻建筑师的设计网络!"
       }
     },
     {
       "name": "E周网",
-      "url": "http://ieday.cn/",
+      "url": "http://ieday.cn",
       "domain":"",
       "target": "b",
       "index": 11,
       "img": {
         "url": "img/logo/12.png",
         "alt": "",
-        "hover_img": "img/logo_hover/12.png"
+        "hover_img": "img/logo_hover/12.png",
+        "title":"设计e周网_发现与共享视觉创意和灵感"
       }
     },
     {
       "name": "批给屋",
-      "url": "http://www.pgive.com/",
+      "url": "http://www.pgive.com",
       "domain":"",
       "target": "b",
       "index": 12,
       "img": {
         "url": "img/logo/13.png",
         "alt": "",
-        "hover_img": "img/logo_hover/13.png"
+        "hover_img": "img/logo_hover/13.png",
+        "title":"批给屋_给!我想要!"
       }
     },
     {
       "name": "SUBBS",
-      "url": "http://www.sketchupbbs.com/",
+      "url": "http://www.sketchupbbs.com",
       "domain":"",
       "target": "b",
       "index": 13,
       "img": {
         "url": "img/logo/14.png",
         "alt": "",
-        "hover_img": "img/logo_hover/14.png"
+        "hover_img": "img/logo_hover/14.png",
+        "title":"中国最具活力的三维可视化设计师交流社区"
       }
     },
     {
       "name": "建筑报道网",
-      "url": "http://www.archreport.com.cn/",
+      "url": "http://www.archreport.com.cn",
       "domain":"",
       "target": "b",
       "index": 14,
       "img": {
         "url": "img/logo/15.png",
         "alt": "",
-        "hover_img": "img/logo_hover/15.png"
+        "hover_img": "img/logo_hover/15.png",
+        "title":"中国建筑报道网,立足打造中国最有影响力的建筑专业网站。"
       }
     },
     {
       "name": "观筑网",
-      "url": "http://www.archain.com/",
+      "url": "http://www.archain.com",
       "domain":"",
       "target": "b",
       "index": 15,
       "img": {
         "url": "img/logo/16.png",
         "alt": "",
-        "hover_img": "img/logo_hover/16.png"
+        "hover_img": "img/logo_hover/16.png",
+        "title":"中国第一家建筑设计行业视频网站"
       }
     },
     {
       "name": "建筑邦",
-      "url": "http://www.architbang.com/",
+      "url": "http://www.architbang.com",
       "domain":"",
       "target": "b",
       "index": 16,
       "img": {
         "url": "img/logo/17.png",
         "alt": "",
-        "hover_img": "img/logo_hover/17.png"
+        "hover_img": "img/logo_hover/17.png",
+        "title":"建筑邦—第一建筑设计阅读互动平台"
       }
     },
     {
       "name": "坯子库",
-      "url": "http://www.piziku.com/",
+      "url": "http://www.piziku.com",
       "domain":"",
       "target": "b",
       "index": 17,
       "img": {
         "url": "img/logo/18.png",
         "alt": "",
-        "hover_img": "img/logo_hover/18.png"
+        "hover_img": "img/logo_hover/18.png",
+        "title":"坯子库 | 设计师的服务平台-SketchUp插件管理"
       }
     },
     {
       "name": "旅设",
-      "url": "http://www.lvshedesign.com/",
+      "url": "http://www.lvshedesign.com",
       "domain":"",
       "target": "b",
       "index": 18,
       "img": {
         "url": "img/logo/19.png",
         "alt": "",
-        "hover_img": "img/logo_hover/19.png"
+        "hover_img": "img/logo_hover/19.png",
+        "title":"旅设|诚实设计,设计成实"
       }
     },
     {
       "name": "搜建筑",
-      "url": "http://www.soujianzhu.cn/",
+      "url": "http://www.soujianzhu.cn",
       "domain":"",
       "target": "b",
       "index": 19,
       "img": {
         "url": "img/logo/20.png",
         "alt": "",
-        "hover_img": "img/logo_hover/20.png"
+        "hover_img": "img/logo_hover/20.png",
+        "title":"搜建筑网 -- 建筑设计资料最全的门户网"
       }
     },
     {
       "name": "褶子城市",
-      "url": "http://www.foldcity.com/",
+      "url": "http://www.foldcity.com",
       "target": "b",
       "index": 20,
       "img": {
         "url": "img/logo/21.png",
         "alt": "",
-        "hover_img": "img/logo_hover/21.png"
+        "hover_img": "img/logo_hover/21.png",
+        "title":"建筑设计、跨界设计及先锋设计交流平台"
       }
     },
     {
       "name": "筑视网",
-      "url": "http://www.zshid.com/",
+      "url": "http://www.zshid.com",
       "target": "b",
       "index": 21,
       "img": {
         "url": "img/logo/22.png",
         "alt": "",
-        "hover_img": "img/logo_hover/22.png"
+        "hover_img": "img/logo_hover/22.png",
+        "title":"环球设计联盟--建筑设计师交流平台"
       }
     },
     {
       "name": "BIM中国网",
-      "url": "http://www.cnbim.com/",
+      "url": "http://www.cnbim.com",
       "target": "b",
       "index": 22,
       "img": {
         "url": "img/logo/23.png",
         "alt": "",
-        "hover_img": "img/logo_hover/23.png"
+        "hover_img": "img/logo_hover/23.png",
+        "title":"最具影响力的BIM网站"
       }
     },
     {
       "name": "筑易设计网",
-      "url": "http://www.zhuyinet.com/",
+      "url": "http://www.zhuyinet.com",
       "target": "b",
       "index": 23,
       "img": {
         "url": "img/logo/24.png",
         "alt": "",
-        "hover_img": "img/logo_hover/24.png"
+        "hover_img": "img/logo_hover/24.png",
+        "title":"筑易设计,您的设计管家"
       }
     },
     {
       "name": "三开间",
-      "url": "http://www.sankaijian.com/",
+      "url": "http://www.sankaijian.com",
       "target": "b",
       "index": 24,
       "img": {
         "url": "img/logo/25.png",
         "alt": "",
-        "hover_img": "img/logo_hover/25.png"
+        "hover_img": "img/logo_hover/25.png",
+        "title":"三开间致力于提供世界范围内最有价值的建筑设计资讯,沟通行业内人士,传播建筑界的前沿声音,沉淀为行业内的专业媒体代表。"
       }
     },
     {
       "name": "建筑加油站",
-      "url": "http://www.archcomeon.com/",
+      "url": "http://www.archcomeon.com",
       "target": "b",
       "index": 25,
       "img": {
         "url": "img/logo/26.png",
         "alt": "",
-        "hover_img": "img/logo_hover/26.png"
+        "hover_img": "img/logo_hover/26.png",
+        "title":"建筑加油站—中国最大的建筑资料分享论坛"
       }
     },
     {
       "name": "埃克思建筑",
-      "url": "http://www.xarchi.com/",
+      "url": "http://www.xarchi.com",
       "target": "b",
       "index": 26,
       "img": {
         "url": "img/logo/27.png",
         "alt": "",
-        "hover_img": "img/logo_hover/27.png"
+        "hover_img": "img/logo_hover/27.png",
+        "title":"埃克思建筑设计网 - 成为建筑师每天必上的网站!"
       }
     },
     {
       "name": "紫天SU",
-      "url": "http://www.sublog.net/",
+      "url": "http://www.sublog.net",
       "target": "b",
       "index": 27,
       "img": {
         "url": "img/logo/28.png",
         "alt": "",
-        "hover_img": "img/logo_hover/28.png"
+        "hover_img": "img/logo_hover/28.png",
+        "title":"关注SketchUp及Trimble DBO发展的专业博客"
       }
     },
     {
       "name": "行走建筑",
-      "url": "http://www.walkarc.com/",
+      "url": "http://www.walkarc.com",
       "target": "b",
       "index": 28,
       "img": {
         "url": "img/logo/29.png",
         "alt": "",
-        "hover_img": "img/logo_hover/29.png"
+        "hover_img": "img/logo_hover/29.png",
+        "title":"一个富有人文主义情怀的当代媒体"
       }
     },
     {
       "name": "智筑网",
-      "url": "http://www.iqbbs.com/",
+      "url": "http://www.iqbbs.com",
       "target": "b",
       "index": 29,
       "img": {
         "url": "img/logo/30.png",
         "alt": "",
-        "hover_img": "img/logo_hover/30.png"
+        "hover_img": "img/logo_hover/30.png",
+        "title":"设计师之家-设计网站-智筑网"
       }
     },
     {
       "name": "建筑师的非建筑",
-      "url": "http://www.abovearch.com/",
+      "url": "http://www.abovearch.com",
       "target": "b",
       "index": 30,
       "img": {
         "url": "img/logo/31.png",
         "alt": "",
-        "hover_img": "img/logo_hover/31.png"
+        "hover_img": "img/logo_hover/31.png",
+        "title":"建筑师的非建筑(AboveArch) - 感动你的,首先必是感动我的"
       }
     },
     {
       "name": "同时建筑",
-      "url": "http://www.tongimes.com/",
+      "url": "http://www.tongimes.com",
       "target": "b",
       "index": 31,
       "img": {
         "url": "img/logo/32.png",
         "alt": "",
-        "hover_img": "img/logo_hover/32.png"
+        "hover_img": "img/logo_hover/32.png",
+        "title":"同时!建筑自媒体 - Tongimes"
       }
     },
     {
       "name": "活力网",
-      "url": "http://www.uzing.net/",
+      "url": "http://www.uzing.net",
       "target": "b",
       "index": 32,
       "img": {
         "url": "img/logo/33.png",
         "alt": "",
-        "hover_img": "img/logo_hover/33.jpg"
+        "hover_img": "img/logo_hover/33.jpg",
+        "title":"活力网-让学习更简单!"
       }
     },
     {
       "name": "大太阳建筑网",
-      "url": "http://www.10333.com/",
+      "url": "http://www.10333.com",
       "target": "b",
       "index": 33,
       "img": {
         "url": "img/logo/34.png",
         "alt": "",
-        "hover_img": "img/logo_hover/34.png"
+        "hover_img": "img/logo_hover/34.png",
+        "title":"大太阳建筑网_中国首家建筑行业门户网站"
       }
     },
     {
       "name": "SUBAR",
-      "url": "http://www.sketchupbar.com/",
+      "url": "http://www.sketchupbar.com",
       "target": "b",
       "index": 34,
       "img": {
         "url": "img/logo/35.png",
         "alt": "",
-        "hover_img": "img/logo_hover/35.png"
+        "hover_img": "img/logo_hover/35.png",
+        "title":"SketchUp吧 - SketchUp中国门户网站"
       }
     },
     {
       "name": "建筑酷",
-      "url": "http://www.jzkoo.net/",
+      "url": "http://www.jzkoo.net",
       "target": "b",
       "index": 35,
       "img": {
         "url": "img/logo/36.png",
         "alt": "",
-        "hover_img": "img/logo_hover/36.png"
+        "hover_img": "img/logo_hover/36.png",
+        "title":"建筑酷丨建筑师的在线免费资料宝库"
       }
     },
     {
       "name": "ACS",
-      "url": "http://www.acs.cn/",
+      "url": "http://www.acs.cn",
       "target": "b",
       "index": 36,
       "img": {
         "url": "img/logo/37.png",
         "alt": "",
-        "hover_img": "img/logo_hover/37.png"
+        "hover_img": "img/logo_hover/37.png",
+        "title":"ACS创意空间网是艺力旗下的艺术设计资讯网,致力于展示新锐设计师作品,推介设计项目,提供私人定制出版和众筹出版等服务。"
       }
     },
     {
       "name": "中国建设科技网",
-      "url": "http://www.build.cn/",
+      "url": "http://www.build.cn",
       "target": "b",
       "index": 37,
       "img": {
         "url": "img/logo/38.png",
         "alt": "",
-        "hover_img": "img/logo_hover/38.png"
+        "hover_img": "img/logo_hover/38.png",
+        "title":"中国建设科技网是全国建设系统科技信息中心。"
       }
     },
     {
       "name": "美讯在线",
-      "url": "http://arch.liwai.com/",
+      "url": "http://arch.liwai.com",
       "target": "b",
       "index": 38,
       "img": {
         "url": "img/logo/39.png",
         "alt": "",
-        "hover_img": "img/logo_hover/39.png"
+        "hover_img": "img/logo_hover/39.png",
+        "title":"建筑中国网-建筑美好中国"
       }
     },
     {
       "name": "建筑师说",
-      "url": "http://www.lizhi.fm/708241/",
+      "url": "http://www.lizhi.fm/708241",
       "target": "b",
       "index": 39,
       "img": {
         "url": "img/logo/40.png",
         "alt": "",
-        "hover_img": "img/logo_hover/40.png"
+        "hover_img": "img/logo_hover/40.png",
+        "title":"建筑，可以用声音诠释。建筑师说，在你耳边的建筑师。"
       }
     },
     {
       "name": "自在建房",
-      "url": "http://www.zijianfang.cn/",
+      "url": "http://www.zijianfang.cn",
       "target": "b",
       "index": 40,
       "img": {
         "url": "img/logo/41.png",
         "alt": "",
-        "hover_img": "img/logo_hover/41.png"
+        "hover_img": "img/logo_hover/41.png",
+        "title":"自在建房打造最专业的建房平台"
       }
     },
     {
       "name": "BIM STUDIO",
-      "url": "http://bbs.bimst.com/",
+      "url": "http://bbs.bimst.com",
       "target": "b",
       "index": 41,
       "img": {
         "url": "img/logo/42.png",
         "alt": "",
-        "hover_img": "img/logo_hover/42.png"
+        "hover_img": "img/logo_hover/42.png",
+        "title":"中国最活跃的ArchiCAD技术论坛"
       }
     },
     {
       "name": "世界之旅",
-      "url": "http://www.archiworld.com.cn/",
+      "url": "http://www.archiworld.com.cn",
       "target": "b",
       "index": 42,
       "img": {
         "url": "img/logo/43.png",
         "alt": "",
-        "hover_img": "img/logo_hover/43.png"
+        "hover_img": "img/logo_hover/43.png",
+        "title":"全国唯一的建筑专业国际旅行社"
       }
     },
     {
       "name": "问筑网",
-      "url": "http://www.archask.com/",
+      "url": "http://www.archask.com",
       "target": "b",
       "index": 43,
       "img": {
         "url": "img/logo/44.png",
         "alt": "",
-        "hover_img": "img/logo_hover/44.png"
+        "hover_img": "img/logo_hover/44.png",
+        "title":"ARCHASK问筑网(www.archask.com)是互联网最大的建筑问答平台,是建筑及其相关专业网友自发组建的建筑答案库。"
       }
     },
     {
       "name": "尖叫设计",
-      "url": "http://www.wowdsgn.com/",
+      "url": "http://www.wowdsgn.com",
       "target": "b",
       "index": 44,
       "img": {
         "url": "img/logo/45.png",
         "alt": "",
-        "hover_img": "img/logo_hover/45.png"
+        "hover_img": "img/logo_hover/45.png",
+        "title":"尖叫设计 - 聚焦与众不同的日常设计"
       }
     },
     {
       "name": "Archidogs",
-      "url": "http://www.archidogs.com/",
+      "url": "http://www.archidogs.com",
       "target": "b",
       "index": 45,
       "img": {
         "url": "img/logo/46.png",
         "alt": "",
-        "hover_img": "img/logo_hover/46.png"
+        "hover_img": "img/logo_hover/46.png",
+        "title":""
       }
     }
   ]

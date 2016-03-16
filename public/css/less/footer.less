@@ -67,16 +67,19 @@ footer {
             position: relative;
             &:hover{
                 .wechat-hover{
-                    display: block;
+                    visibility: visible;
+                    opacity: 1;
+                    .browserPrefix(transform,translate(20px,-50%));
                 }
             }
             .wechat-hover{
                 position: absolute;
-                display: none;
+                visibility: hidden;
                 top: 50%;
                 left: 100%;
-                margin-left: 20px;
-                .browserPrefix(transform,translateY(-50%));
+                opacity: 0;
+                .browserPrefix(transform,translate(100px,-50%));
+                .browserPrefix(transition, all 0.3s);
             }
         }
         
