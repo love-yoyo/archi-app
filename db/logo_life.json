@@ -2,7 +2,7 @@
   "logos": [
     {
       "name": "百度",
-      "url": "https://www.baidu.com/",
+      "url": "https://www.baidu.com",
       "domain":"www.archdaily.cn",
       "target": "b",
       "index": 0,
@@ -15,7 +15,7 @@
     },
     {
       "name": "腾讯",
-      "url": "http://www.qq.com/",
+      "url": "http://www.qq.com",
       "domain":"",
       "target": "b",
       "index": 1,
@@ -28,7 +28,7 @@
     },
     {
       "name": "淘宝网",
-      "url": "https://www.taobao.com/",
+      "url": "https://www.taobao.com",
       "domain":"",
       "target": "b",
       "index": 2,
@@ -41,7 +41,7 @@
     },
     {
       "name": "天猫",
-      "url": "https://www.tmall.com/",
+      "url": "https://www.tmall.com",
       "domain":"",
       "target": "b",
       "index": 3,
@@ -54,7 +54,7 @@
     },
     {
       "name": "聚划算",
-      "url": "https://ju.taobao.com/",
+      "url": "https://ju.taobao.com",
       "domain":"",
       "target": "b",
       "index": 4,
@@ -67,7 +67,7 @@
     },
     {
       "name": "京东商城",
-      "url": "http://www.jd.com/",
+      "url": "http://www.jd.com",
       "domain":"",
       "target": "b",
       "index": 5,
@@ -80,7 +80,7 @@
     },
     {
       "name": "唯品会",
-      "url": "http://www.vip.com/",
+      "url": "http://www.vip.com",
       "domain":"",
       "target": "b",
       "index": 6,
@@ -93,7 +93,7 @@
     },
     {
       "name": "1号店",
-      "url": "http://www.yhd.com/",
+      "url": "http://www.yhd.com",
       "domain":"",
       "target": "b",
       "index": 7,
@@ -106,7 +106,7 @@
     },
     {
       "name": "当当网",
-      "url": "http://www.dangdang.com/",
+      "url": "http://www.dangdang.com",
       "domain":"",
       "target": "b",
       "index": 8,
@@ -118,7 +118,7 @@
     },
     {
       "name": "腾讯视频",
-      "url": "http://v.qq.com/",
+      "url": "http://v.qq.com",
       "domain":"",
       "target": "b",
       "index": 9,
@@ -130,7 +130,7 @@
     },
     {
       "name": "爱奇艺高清",
-      "url": "http://www.iqiyi.com/",
+      "url": "http://www.iqiyi.com",
       "domain":"",
       "target": "b",
       "index": 10,
@@ -142,7 +142,7 @@
     },
     {
       "name": "PPTV聚力",
-      "url": "http://www.pptv.com/",
+      "url": "http://www.pptv.com",
       "domain":"",
       "target": "b",
       "index": 11,
@@ -154,7 +154,7 @@
     },
     {
       "name": "优酷网",
-      "url": "http://www.youku.com/",
+      "url": "http://www.youku.com",
       "domain":"",
       "target": "b",
       "index": 12,
@@ -166,7 +166,7 @@
     },
     {
       "name": "亚马逊",
-      "url": "http://www.amazon.cn/",
+      "url": "http://www.amazon.cn",
       "domain":"",
       "target": "b",
       "index": 13,
@@ -178,7 +178,7 @@
     },
     {
       "name": "蘑菇街",
-      "url": "http://www.mogujie.com/",
+      "url": "http://www.mogujie.com",
       "domain":"",
       "target": "b",
       "index": 14,
@@ -190,7 +190,7 @@
     },
     {
       "name": "美团网",
-      "url": "http://www.meituan.com/",
+      "url": "http://www.meituan.com",
       "domain":"",
       "target": "b",
       "index": 15,
@@ -202,7 +202,7 @@
     },
     {
       "name": "国美在线",
-      "url": "http://www.gome.com.cn/",
+      "url": "http://www.gome.com.cn",
       "domain":"",
       "target": "b",
       "index": 16,
@@ -214,7 +214,7 @@
     },
     {
       "name": "苏宁易购",
-      "url": "http://www.suning.com/",
+      "url": "http://www.suning.com",
       "domain":"",
       "target": "b",
       "index": 17,
@@ -226,7 +226,7 @@
     },
     {
       "name": "新浪",
-      "url": "http://www.sina.com.cn/",
+      "url": "http://www.sina.com.cn",
       "domain":"",
       "target": "b",
       "index": 18,
@@ -238,7 +238,7 @@
     },
     {
       "name": "搜狐",
-      "url": "http://www.sohu.com/",
+      "url": "http://www.sohu.com",
       "domain":"",
       "target": "b",
       "index": 19,
@@ -250,7 +250,7 @@
     },
     {
       "name": "网易",
-      "url": "http://www.163.com/",
+      "url": "http://www.163.com",
       "target": "b",
       "index": 20,
       "img": {
@@ -261,7 +261,7 @@
     },
     {
       "name": "凤凰",
-      "url": "http://www.ifeng.com/",
+      "url": "http://www.ifeng.com",
       "target": "b",
       "index": 21,
       "img": {
@@ -272,7 +272,7 @@
     },
     {
       "name": "新华网",
-      "url": "http://www.xinhuanet.com/",
+      "url": "http://www.xinhuanet.com",
       "target": "b",
       "index": 22,
       "img": {
@@ -283,7 +283,7 @@
     },
     {
       "name": "人民网",
-      "url": "http://www.people.com.cn/",
+      "url": "http://www.people.com.cn",
       "target": "b",
       "index": 23,
       "img": {
@@ -294,7 +294,7 @@
     },
     {
       "name": "东方财富网",
-      "url": "http://www.eastmoney.com/",
+      "url": "http://www.eastmoney.com",
       "target": "b",
       "index": 24,
       "img": {
@@ -306,7 +306,7 @@
     },
     {
       "name": "知乎",
-      "url": "http://www.zhihu.com/",
+      "url": "http://www.zhihu.com",
       "target": "b",
       "index": 25,
       "img": {
@@ -317,7 +317,7 @@
     },
     {
       "name": "汽车之家",
-      "url": "http://www.autohome.com.cn/",
+      "url": "http://www.autohome.com.cn",
       "target": "b",
       "index": 26,
       "img": {
@@ -328,7 +328,7 @@
     },
     {
       "name": "58同城",
-      "url": "http://www.58.com/",
+      "url": "http://www.58.com",
       "target": "b",
       "index": 27,
       "img": {
@@ -339,7 +339,7 @@
     },
     {
       "name": "赶集网",
-      "url": "http://www.ganji.com/",
+      "url": "http://www.ganji.com",
       "target": "b",
       "index": 28,
       "img": {
@@ -350,7 +350,7 @@
     },
     {
       "name": "百姓网",
-      "url": "http://www.baixing.com/",
+      "url": "http://www.baixing.com",
       "target": "b",
       "index": 29,
       "img": {
@@ -361,7 +361,7 @@
     },
     {
       "name": "智联招聘",
-      "url": "http://www.zhaopin.com/",
+      "url": "http://www.zhaopin.com",
       "target": "b",
       "index": 30,
       "img": {
@@ -373,7 +373,7 @@
     },
     {
       "name": "铁路12306",
-      "url": "http://www.12306.cn/",
+      "url": "http://www.12306.cn",
       "target": "b",
       "index": 31,
       "img": {
@@ -384,7 +384,7 @@
     },
     {
       "name": "携程网",
-      "url": "http://www.ctrip.com/",
+      "url": "http://www.ctrip.com",
       "target": "b",
       "index": 32,
       "img": {
@@ -395,7 +395,7 @@
     },
     {
       "name": "世纪佳缘",
-      "url": "http://www.jiayuan.com/",
+      "url": "http://www.jiayuan.com",
       "target": "b",
       "index": 33,
       "img": {
@@ -406,7 +406,7 @@
     },
     {
       "name": "搜房网",
-      "url": "http://www.fang.com/",
+      "url": "http://www.fang.com",
       "target": "b",
       "index": 34,
       "img": {
@@ -417,7 +417,7 @@
     },
     {
       "name": "安居客房产",
-      "url": "http://www.anjuke.com/",
+      "url": "http://www.anjuke.com",
       "target": "b",
       "index": 35,
       "img": {
@@ -428,7 +428,7 @@
     },
     {
       "name": "去哪儿网",
-      "url": "http://www.qunar.com/",
+      "url": "http://www.qunar.com",
       "target": "b",
       "index": 36,
       "img": {
@@ -439,7 +439,7 @@
     },
     {
       "name": "同程旅游",
-      "url": "http://www.ly.com/",
+      "url": "http://www.ly.com",
       "target": "b",
       "index": 37,
       "img": {
@@ -450,7 +450,7 @@
     },
     {
       "name": "途牛旅游网",
-      "url": "http://www.tuniu.com/",
+      "url": "http://www.tuniu.com",
       "target": "b",
       "index": 38,
       "img": {
@@ -461,7 +461,7 @@
     },
     {
       "name": "艺龙酒店",
-      "url": "http://www.elong.com/",
+      "url": "http://www.elong.com",
       "target": "b",
       "index": 39,
       "img": {

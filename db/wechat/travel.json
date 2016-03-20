@@ -1,0 +1,158 @@
+{
+    "logos": [
+        {
+            "name": "建筑之旅",
+            "url": "",
+            "index": 0,
+            "img": {
+                "url": "/img/wechat/travel/001.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/travel/001web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "烟囱PSA",
+            "url": "",
+            "index": 1,
+            "img": {
+                "url": "/img/wechat/travel/002.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/travel/002web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "大师之旅",
+            "url": "",
+            "index": 2,
+            "img": {
+                "url": "/img/wechat/travel/003.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/travel/003web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "偶然的旅人",
+            "url": "",
+            "index": 3,
+            "img": {
+                "url": "/img/wechat/travel/004.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/travel/004web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "啡行记",
+            "url": "",
+            "index": 4,
+            "img": {
+                "url": "/img/wechat/travel/005.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/travel/005web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "苹果姐姐",
+            "url": "",
+            "index": 5,
+            "img": {
+                "url": "/img/wechat/travel/006.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/travel/006web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "恋物家族",
+            "url": "",
+            "index": 6,
+            "img": {
+                "url": "/img/wechat/travel/007.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/travel/007web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "ASA",
+            "url": "",
+            "index": 7,
+            "img": {
+                "url": "/img/wechat/travel/008.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/travel/008web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "MornEdu",
+            "url": "",
+            "index": 8,
+            "img": {
+                "url": "/img/wechat/travel/009.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/travel/009web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "上海西岸",
+            "url": "",
+            "index": 9,
+            "img": {
+                "url": "/img/wechat/travel/010.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/travel/010web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "行走中的建筑学",
+            "url": "",
+            "index": 10,
+            "img": {
+                "url": "/img/wechat/travel/011.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/travel/011web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "lighthouse",
+            "url": "",
+            "index": 11,
+            "img": {
+                "url": "/img/wechat/travel/012.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/travel/012web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "北京世界之旅",
+            "url": "",
+            "index": 12,
+            "img": {
+                "url": "/img/wechat/travel/013.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/travel/013web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑师的留学圈儿",
+            "url": "",
+            "index": 13,
+            "img": {
+                "url": "/img/wechat/travel/014.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/travel/014web.png",
+                "title":""
+            }
+        }
+    ]
+}

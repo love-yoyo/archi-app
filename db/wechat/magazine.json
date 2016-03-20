@@ -1,0 +1,126 @@
+{
+    "logos": [
+        {
+            "name": "建筑技艺",
+            "url": "",
+            "index": 0,
+            "img": {
+                "url": "/img/wechat/magazine/001.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/magazine/001web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "AC建筑创作",
+            "url": "",
+            "index": 1,
+            "img": {
+                "url": "/img/wechat/magazine/002.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/magazine/002web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "UED",
+            "url": "",
+            "index": 2,
+            "img": {
+                "url": "/img/wechat/magazine/003.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/magazine/003web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑技术",
+            "url": "",
+            "index": 3,
+            "img": {
+                "url": "/img/wechat/magazine/004.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/magazine/004web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑师杂志",
+            "url": "",
+            "index": 4,
+            "img": {
+                "url": "/img/wechat/magazine/005.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/magazine/005web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "世界建筑",
+            "url": "",
+            "index": 5,
+            "img": {
+                "url": "/img/wechat/magazine/006.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/magazine/006web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "时代建筑",
+            "url": "",
+            "index": 6,
+            "img": {
+                "url": "/img/wechat/magazine/007.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/magazine/007web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑学报",
+            "url": "",
+            "index": 7,
+            "img": {
+                "url": "/img/wechat/magazine/008.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/magazine/008web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "新建筑",
+            "url": "",
+            "index": 8,
+            "img": {
+                "url": "/img/wechat/magazine/009.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/magazine/009web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "南方建筑",
+            "url": "",
+            "index": 9,
+            "img": {
+                "url": "/img/wechat/magazine/010.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/magazine/010web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "光明城",
+            "url": "",
+            "index": 10,
+            "img": {
+                "url": "/img/wechat/magazine/011.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/magazine/011web.png",
+                "title":""
+            }
+        }
+
+    ]
+}

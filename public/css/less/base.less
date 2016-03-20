@@ -13,6 +13,7 @@
 @color-36: #363636;
 @color-33: #333333;
 @color-88: #888888;
+@color-66: #666666;
 @color-42: #424242;
 @color-4c: #4c4c4c;
 @color-7f: #7f7f7f;
@@ -487,13 +488,14 @@ h5.more{
         width: 100%;
         overflow: hidden;
         position: relative;
-        a{
+        display: block;
+        .img-contain{
             width: 100%;
             height: 100%;
             display: block;
             img{
                 .browserPrefix(transition,transform 0.5s);
-                height: 500px;
+                height: 610px;
             }
         }
         .hoverImg-toRight{
@@ -581,9 +583,9 @@ h5.more{
             padding-bottom: 8px;
             .img-wrap{
                 height: 243px;
-                a{
+                .img-contain{
                     img{
-                        height: 243px;
+                        height: 250px;
                     }
                 }
             }
@@ -592,9 +594,9 @@ h5.more{
             padding-top: 8px;
             .img-wrap{
                 height: 243px;
-                a{
+                .img-contain{
                     img{
-                        height: 340px;
+                        height: 250px;
                     }
                 }
             }
@@ -1165,6 +1167,7 @@ li {
     background-color: @color-green;
     z-index: 1000;
     background-color: @color-36;
+    text-align: left;
     display: none;
     &.active{
         display: block;
@@ -1276,8 +1279,8 @@ li {
             left: -100%;
             top: -100%;
             opacity: 0;
-            .browserPrefix(transform,translateX(-200px));
-            .browserPrefix(transition,all 0.3s);
+            .browserPrefix(transform,translateX(-170px));
+            .browserPrefix(transition,all 0.3s ease-in);
         } 
         &:hover{
             &:after{

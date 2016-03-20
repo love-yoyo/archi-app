@@ -1,0 +1,433 @@
+{
+    "logos": [
+        {
+            "name": "建筑师的非建筑",
+            "url": "",
+            "index": 0,
+            "img": {
+                "url": "/img/wechat/news/001.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/001web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "搜建筑",
+            "url": "",
+            "index": 1,
+            "img": {
+                "url": "/img/wechat/news/002.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/002web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑学院",
+            "url": "",
+            "index": 2,
+            "img": {
+                "url": "/img/wechat/news/003.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/003web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "筑龙建筑设计",
+            "url": "",
+            "index": 3,
+            "img": {
+                "url": "/img/wechat/news/004.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/004web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "三开间建筑设计报道",
+            "url": "",
+            "index": 4,
+            "img": {
+                "url": "/img/wechat/news/005.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/005web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "有方空间",
+            "url": "",
+            "index": 5,
+            "img": {
+                "url": "/img/wechat/news/006.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/006web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "一米好地房产众筹",
+            "url": "",
+            "index": 6,
+            "img": {
+                "url": "/img/wechat/news/007.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/007web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "Gooood谷德设计网",
+            "url": "",
+            "index": 7,
+            "img": {
+                "url": "/img/wechat/news/008.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/008web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "designboom设计邦",
+            "url": "",
+            "index": 8,
+            "img": {
+                "url": "/img/wechat/news/009.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/009web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "archgo建筑网",
+            "url": "",
+            "index": 9,
+            "img": {
+                "url": "/img/wechat/news/010.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/010web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "中国最佳设计酒店",
+            "url": "",
+            "index": 10,
+            "img": {
+                "url": "/img/wechat/news/011.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/011web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "ABBS",
+            "url": "",
+            "index": 11,
+            "img": {
+                "url": "/img/wechat/news/012.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/012web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "ASL阿特森景观",
+            "url": "",
+            "index": 12,
+            "img": {
+                "url": "/img/wechat/news/013.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/013web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑微品",
+            "url": "",
+            "index": 13,
+            "img": {
+                "url": "/img/wechat/news/014.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/014web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑时装",
+            "url": "",
+            "index": 14,
+            "img": {
+                "url": "/img/wechat/news/015.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/015web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑师看世界",
+            "url": "",
+            "index": 15,
+            "img": {
+                "url": "/img/wechat/news/016.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/016web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "e周刊",
+            "url": "",
+            "index": 16,
+            "img": {
+                "url": "/img/wechat/news/017.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/017web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "EUREKA阴翳礼赞之旅",
+            "url": "",
+            "index": 17,
+            "img": {
+                "url": "/img/wechat/news/018.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/018web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "同时建筑自媒体",
+            "url": "",
+            "index": 18,
+            "img": {
+                "url": "/img/wechat/news/019.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/019web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "一条",
+            "url": "",
+            "index": 19,
+            "img": {
+                "url": "/img/wechat/news/020.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/020web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "灵感日报",
+            "url": "",
+            "index": 20,
+            "img": {
+                "url": "/img/wechat/news/021.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/021web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "Archdaily中国",
+            "url": "",
+            "index": 21,
+            "img": {
+                "url": "/img/wechat/news/022.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/022web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "谁最中国",
+            "url": "",
+            "index": 22,
+            "img": {
+                "url": "/img/wechat/news/023.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/023web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "吾舍",
+            "url": "",
+            "index": 23,
+            "img": {
+                "url": "/img/wechat/news/024.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/024web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "专筑",
+            "url": "",
+            "index": 24,
+            "img": {
+                "url": "/img/wechat/news/025.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/025web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "设计竞赛",
+            "url": "",
+            "index": 25,
+            "img": {
+                "url": "/img/wechat/news/026.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/026web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "archrefer",
+            "url": "",
+            "index": 26,
+            "img": {
+                "url": "/img/wechat/news/027.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/027web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "AAI国际建筑",
+            "url": "",
+            "index": 27,
+            "img": {
+                "url": "/img/wechat/news/028.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/028web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "Hostelst",
+            "url": "",
+            "index": 28,
+            "img": {
+                "url": "/img/wechat/news/029.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/029web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "宅匠",
+            "url": "",
+            "index": 29,
+            "img": {
+                "url": "/img/wechat/news/030.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/030web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑邦",
+            "url": "",
+            "index": 30,
+            "img": {
+                "url": "/img/wechat/news/031.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/031web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "深圳观筑",
+            "url": "",
+            "index": 31,
+            "img": {
+                "url": "/img/wechat/news/032.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/032web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑畅言网",
+            "url": "",
+            "index": 32,
+            "img": {
+                "url": "/img/wechat/news/033.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/033web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "无非建筑",
+            "url": "",
+            "index": 33,
+            "img": {
+                "url": "/img/wechat/news/034.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/034web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "VELUX/威卢克斯",
+            "url": "",
+            "index": 34,
+            "img": {
+                "url": "/img/wechat/news/035.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/035web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "弘毅设计",
+            "url": "",
+            "index": 35,
+            "img": {
+                "url": "/img/wechat/news/036.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/036web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "褶子城市",
+            "url": "",
+            "index": 36,
+            "img": {
+                "url": "/img/wechat/news/037.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/037web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "popoffices",
+            "url": "",
+            "index": 37,
+            "img": {
+                "url": "/img/wechat/news/038.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/038web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "AIM Competition",
+            "url": "",
+            "index": 38,
+            "img": {
+                "url": "/img/wechat/news/039.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/039web.png",
+                "title":""
+            }
+        }
+    ]
+}

@@ -20,6 +20,13 @@
 
     }
 }
+.wcg-header{
+    background-color: @color-66;
+    .title{
+        color: @color-white;
+        font-size: 30px;
+    }
+}
 .wcg-cate{
     width: 100%;
     overflow: hidden;
@@ -48,20 +55,27 @@
 }
 .wcg-logo{
     width: 100%;
-    overflow: hidden;
+    &:after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        clear: both;
+        }
     li{
         float: left;
         width: 10%;
         text-align: center;
         margin-bottom: 15px;
         margin-top: 15px;
+        position: relative;
         a{
             display: inline-block;
             text-align: center;
             width: 80px;
             height: 80px;
             border-radius: 50%;
-            border: 1px solid @color-green;
+            // border: 1px solid @color-green;
             overflow: hidden;
             img{
                 width: 100%;

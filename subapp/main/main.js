@@ -67,6 +67,7 @@ $(document).ready(function() {
             // placeholder: "/img/loding.gif",
             placeholder: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC",
             failure_limit : 10,
+            threshold : 200,
             skip_invisible : false
         });
     },1500);
@@ -218,10 +219,10 @@ $(document).ready(function() {
                         _find.addClass("active");
                         console.log("der:"+parseFloat(_containerWidth-_left-_itemWidth));
                         var itemLeft = parseFloat(_containerWidth-_left-_itemWidth)<350 ? -360 : 100;
-                        var itemTop = _containerHeight<400 ? -400 : 0;
+                        // var itemTop = _containerHeight<400 ? -400 : 0;
                         _find.css({
                             left: itemLeft,
-                            top: itemTop
+                            top: 0
                         })
                         
                     } else {
@@ -247,6 +248,7 @@ $(document).ready(function() {
             // placeholder: "/img/loding.gif",
             placeholder: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC",
             failure_limit : 10,
+            threshold : 200,
             skip_invisible : false
         });
         
@@ -750,7 +752,8 @@ $(document).ready(function() {
             $("#logoContainer img.lazy").lazyload({
                 effect:"fadeIn", 
                 failure_limit : 10,
-                placeholder: "/img/loding.gif",
+                threshold : 200,
+                placeholder: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC",
                 skip_invisible : false
             });
             console.log("success");
@@ -880,7 +883,8 @@ $(document).ready(function() {
             $("#logoContainer img.lazy").lazyload({
                 effect:"fadeIn", 
                 failure_limit : 10,
-                placeholder: "/img/loding.gif",
+                threshold : 200,
+                placeholder: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC",
                 skip_invisible : false
             });
             console.log("success");

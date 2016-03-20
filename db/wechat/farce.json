@@ -1,0 +1,356 @@
+{
+    "logos": [
+        {
+            "name": "Assbook",
+            "url": "",
+            "index": 0,
+            "img": {
+                "url": "/img/wechat/farce/001.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/001web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑八卦女",
+            "url": "",
+            "index": 1,
+            "img": {
+                "url": "/img/wechat/farce/002.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/002web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "地产八卦女",
+            "url": "",
+            "index": 2,
+            "img": {
+                "url": "/img/wechat/farce/003.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/003web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "80建筑",
+            "url": "",
+            "index": 3,
+            "img": {
+                "url": "/img/wechat/farce/004.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/004web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "正反面儿",
+            "url": "",
+            "index": 4,
+            "img": {
+                "url": "/img/wechat/farce/005.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/005web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "批给屋",
+            "url": "",
+            "index": 5,
+            "img": {
+                "url": "/img/wechat/farce/006.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/006web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "ArchLink",
+            "url": "",
+            "index": 6,
+            "img": {
+                "url": "/img/wechat/farce/007.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/007web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "晓宇的建筑白日梦",
+            "url": "",
+            "index": 7,
+            "img": {
+                "url": "/img/wechat/farce/008.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/008web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑互联网",
+            "url": "",
+            "index": 8,
+            "img": {
+                "url": "/img/wechat/farce/009.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/009web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "甲方2乙方",
+            "url": "",
+            "index": 9,
+            "img": {
+                "url": "/img/wechat/farce/010.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/010web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "一条做设计的狗",
+            "url": "",
+            "index": 10,
+            "img": {
+                "url": "/img/wechat/farce/011.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/011web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "一起设计",
+            "url": "",
+            "index": 11,
+            "img": {
+                "url": "/img/wechat/farce/012.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/012web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "EEUD",
+            "url": "",
+            "index": 12,
+            "img": {
+                "url": "/img/wechat/farce/013.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/013web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "设计关注",
+            "url": "",
+            "index": 13,
+            "img": {
+                "url": "/img/wechat/farce/014.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/014web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑师与fashionista",
+            "url": "",
+            "index": 14,
+            "img": {
+                "url": "/img/wechat/farce/015.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/015web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "Archist",
+            "url": "",
+            "index": 15,
+            "img": {
+                "url": "/img/wechat/farce/016.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/016web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑师疯人院",
+            "url": "",
+            "index": 16,
+            "img": {
+                "url": "/img/wechat/farce/017.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/017web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "特赞Tezign",
+            "url": "",
+            "index": 17,
+            "img": {
+                "url": "/img/wechat/farce/018.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/018web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "优创工场",
+            "url": "",
+            "index": 18,
+            "img": {
+                "url": "/img/wechat/farce/019.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/019web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "万叶集",
+            "url": "",
+            "index": 19,
+            "img": {
+                "url": "/img/wechat/farce/020.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/020web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑女也有春天",
+            "url": "",
+            "index": 20,
+            "img": {
+                "url": "/img/wechat/farce/021.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/021web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑逻辑",
+            "url": "",
+            "index": 21,
+            "img": {
+                "url": "/img/wechat/farce/022.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/022web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑联盟",
+            "url": "",
+            "index": 22,
+            "img": {
+                "url": "/img/wechat/farce/023.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/023web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑君VS懒癌菌",
+            "url": "",
+            "index": 23,
+            "img": {
+                "url": "/img/wechat/farce/024.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/024web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑杂谈",
+            "url": "",
+            "index": 24,
+            "img": {
+                "url": "/img/wechat/farce/025.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/025web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "论土木",
+            "url": "",
+            "index": 25,
+            "img": {
+                "url": "/img/wechat/farce/026.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/026web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "城市地标",
+            "url": "",
+            "index": 26,
+            "img": {
+                "url": "/img/wechat/farce/027.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/027web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "巍不足道",
+            "url": "",
+            "index": 27,
+            "img": {
+                "url": "/img/wechat/farce/028.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/028web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "Letstalk",
+            "url": "",
+            "index": 28,
+            "img": {
+                "url": "/img/wechat/farce/029.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/029web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "设计群",
+            "url": "",
+            "index": 29,
+            "img": {
+                "url": "/img/wechat/farce/030.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/030web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "景观设计的小学徒",
+            "url": "",
+            "index": 30,
+            "img": {
+                "url": "/img/wechat/farce/031.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/031web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑设计",
+            "url": "",
+            "index": 31,
+            "img": {
+                "url": "/img/wechat/farce/032.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/032web.png",
+                "title":""
+            }
+        }
+    ]
+}

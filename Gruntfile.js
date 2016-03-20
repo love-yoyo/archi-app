@@ -21,6 +21,7 @@ module.exports = function(grunt) {
           {expand: true, cwd: './subapp', src: ['**/*.js'], dest: 'dist/subapp'},
           {expand: true, cwd: './subapp', src: ['**/*.ejs'], dest: 'dist/views'},
           {expand: true, cwd: './views', src: ['**/*.ejs'], dest: 'dist/views'},
+          {expand: true, cwd: './public', src: ['favicon.png','favicon.ico'], dest: 'dist/public'}
           
         ]
       },

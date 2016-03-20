@@ -1,0 +1,158 @@
+{
+    "logos": [
+        {
+            "name": "大水牛数字设计联盟",
+            "url": "",
+            "index": 0,
+            "img": {
+                "url": "/img/wechat/cource/001.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/001web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "角落工作室",
+            "url": "",
+            "index": 1,
+            "img": {
+                "url": "/img/wechat/cource/002.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/002web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑屋",
+            "url": "",
+            "index": 2,
+            "img": {
+                "url": "/img/wechat/cource/003.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/003web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑日记本",
+            "url": "",
+            "index": 3,
+            "img": {
+                "url": "/img/wechat/cource/004.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/004web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑师的小教室",
+            "url": "",
+            "index": 4,
+            "img": {
+                "url": "/img/wechat/cource/005.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/005web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "坯子库",
+            "url": "",
+            "index": 5,
+            "img": {
+                "url": "/img/wechat/cource/006.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/006web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "韩的日志",
+            "url": "",
+            "index": 6,
+            "img": {
+                "url": "/img/wechat/cource/007.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/007web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "twoDOBE",
+            "url": "",
+            "index": 7,
+            "img": {
+                "url": "/img/wechat/cource/008.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/008web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "腿腿教学网",
+            "url": "",
+            "index": 8,
+            "img": {
+                "url": "/img/wechat/cource/009.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/009web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "专筑讲坛",
+            "url": "",
+            "index": 9,
+            "img": {
+                "url": "/img/wechat/cource/010.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/010web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "56度培训",
+            "url": "",
+            "index": 10,
+            "img": {
+                "url": "/img/wechat/cource/011.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/011web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "1895Dsign",
+            "url": "",
+            "index": 11,
+            "img": {
+                "url": "/img/wechat/cource/012.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/012web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "PAG",
+            "url": "",
+            "index": 12,
+            "img": {
+                "url": "/img/wechat/cource/013.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/013web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "大注云教育平台",
+            "url": "",
+            "index": 13,
+            "img": {
+                "url": "/img/wechat/cource/014.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/014web.png",
+                "title":""
+            }
+        }
+    ]
+}

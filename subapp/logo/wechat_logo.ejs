@@ -1,0 +1,20 @@
+<% 
+    for (var i=0;i<logos.length;i++) {
+        var _logo = logos[i];
+%>
+<li>
+    <a href="<%= _logo.url%>" target="_blank">
+        <img alt="" data-original="<%= _logo.img.url%>" class="lazy">
+    </a>
+    <div class="web-preview" data-hover_image="<%= _logo.img.hover_img%>">
+        <img class="preview-img">
+        <div class="title"><%=_logo.img.title%></div>
+        <div class="author">
+            by&nbsp;<%=_logo.name%>
+        </div>
+        <div class="desc">
+            <%= _logo.name%>
+        </div>
+    </div>
+</li>
+<%}%>

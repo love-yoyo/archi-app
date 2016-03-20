@@ -1,0 +1,345 @@
+{
+    "logos": [
+        {
+            "name": "UDG联创",
+            "url": "",
+            "index": 0,
+            "img": {
+                "url": "/img/wechat/designOrg/001.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/001web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "水石",
+            "url": "",
+            "index": 1,
+            "img": {
+                "url": "/img/wechat/designOrg/002.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/002web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "MAD建筑事务所",
+            "url": "",
+            "index": 2,
+            "img": {
+                "url": "/img/wechat/designOrg/003.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/003web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "DC国际",
+            "url": "",
+            "index": 3,
+            "img": {
+                "url": "/img/wechat/designOrg/004.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/004web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "华阳国际",
+            "url": "",
+            "index": 4,
+            "img": {
+                "url": "/img/wechat/designOrg/005.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/005web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "都设设计",
+            "url": "",
+            "index": 5,
+            "img": {
+                "url": "/img/wechat/designOrg/006.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/006web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "霍普建筑",
+            "url": "",
+            "index": 6,
+            "img": {
+                "url": "/img/wechat/designOrg/007.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/007web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "圆直设计",
+            "url": "",
+            "index": 7,
+            "img": {
+                "url": "/img/wechat/designOrg/008.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/008web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "同济设计TJAD",
+            "url": "",
+            "index": 8,
+            "img": {
+                "url": "/img/wechat/designOrg/009.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/009web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "日兴设计",
+            "url": "",
+            "index": 9,
+            "img": {
+                "url": "/img/wechat/designOrg/010.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/010web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "地平线建筑设计",
+            "url": "",
+            "index": 10,
+            "img": {
+                "url": "/img/wechat/designOrg/011.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/011web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "华都设计",
+            "url": "",
+            "index": 11,
+            "img": {
+                "url": "/img/wechat/designOrg/012.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/012web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "大舍",
+            "url": "",
+            "index": 12,
+            "img": {
+                "url": "/img/wechat/designOrg/013.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/013web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "上海柏涛",
+            "url": "",
+            "index": 13,
+            "img": {
+                "url": "/img/wechat/designOrg/014.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/014web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "JWDA骏地设计",
+            "url": "",
+            "index": 14,
+            "img": {
+                "url": "/img/wechat/designOrg/015.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/015web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "UA建筑设计",
+            "url": "",
+            "index": 15,
+            "img": {
+                "url": "/img/wechat/designOrg/016.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/016web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "万科建筑研究中心",
+            "url": "",
+            "index": 16,
+            "img": {
+                "url": "/img/wechat/designOrg/017.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/017web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "致正建筑工作室",
+            "url": "",
+            "index": 17,
+            "img": {
+                "url": "/img/wechat/designOrg/018.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/018web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "GAD绿城设计",
+            "url": "",
+            "index": 18,
+            "img": {
+                "url": "/img/wechat/designOrg/019.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/019web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "元象建筑",
+            "url": "",
+            "index": 19,
+            "img": {
+                "url": "/img/wechat/designOrg/020.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/020web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "日清建筑",
+            "url": "",
+            "index": 20,
+            "img": {
+                "url": "/img/wechat/designOrg/021.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/021web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "上海建筑设计研究院",
+            "url": "",
+            "index": 21,
+            "img": {
+                "url": "/img/wechat/designOrg/022.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/022web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "中国建筑设计院",
+            "url": "",
+            "index": 22,
+            "img": {
+                "url": "/img/wechat/designOrg/023.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/023web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "AD国际建筑设计事务所",
+            "url": "",
+            "index": 23,
+            "img": {
+                "url": "/img/wechat/designOrg/024.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/024web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "GOA",
+            "url": "",
+            "index": 24,
+            "img": {
+                "url": "/img/wechat/designOrg/025.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/025web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "图石设计",
+            "url": "",
+            "index": 25,
+            "img": {
+                "url": "/img/wechat/designOrg/026.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/026web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "VATA有空工作室",
+            "url": "",
+            "index": 26,
+            "img": {
+                "url": "/img/wechat/designOrg/027.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/027web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "爬山虎BIT",
+            "url": "",
+            "index": 27,
+            "img": {
+                "url": "/img/wechat/designOrg/028.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/028web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "SDD建筑设计",
+            "url": "",
+            "index": 28,
+            "img": {
+                "url": "/img/wechat/designOrg/029.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/029web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "本务工作室",
+            "url": "",
+            "index": 29,
+            "img": {
+                "url": "/img/wechat/designOrg/030.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/030web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "思景域建筑设计",
+            "url": "",
+            "index": 30,
+            "img": {
+                "url": "/img/wechat/designOrg/031.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/031web.png",
+                "title":""
+            }
+        }
+    ]
+}
