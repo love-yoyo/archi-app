@@ -428,6 +428,17 @@
                 "hover_img": "/img/wechat_hover/news/039web.png",
                 "title":""
             }
+        },
+        {
+            "name": "正设计",
+            "url": "",
+            "index": 39,
+            "img": {
+                "url": "/img/wechat/news/040.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/news/040web.png",
+                "title":""
+            }
         }
     ]
 }

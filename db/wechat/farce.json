@@ -351,6 +351,17 @@
                 "hover_img": "/img/wechat_hover/farce/032web.png",
                 "title":""
             }
+        },
+        {
+            "name": "小洪自由说",
+            "url": "",
+            "index": 32,
+            "img": {
+                "url": "/img/wechat/farce/033.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/farce/033web.png",
+                "title":""
+            }
         }
     ]
 }

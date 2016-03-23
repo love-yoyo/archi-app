@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>知筑导航--建筑课程</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    <% include ../header %>
+    <iframe class="iframe" name="visual" id="visual_iframe" src="/cource/visual/uzing.htm" frameborder="0">
+    </iframe>
+    <% include ../footer %>
+</body>
+
+</html>
+<script type="text/javascript" src="/js/lib/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src='/js/lib/bootstrap.min.js'></script>
+<script type="text/javascript" src="/js/lib/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+/*var iframe = document.createElement("iframe");
+iframe.src = "http://www.uzing.net/?mod=about&id=231";
+iframe.style.width = "100%";
+iframe.style.height = "1000px";
+iframe.name = "visual";
+
+iframe.onload = function(){
+    console.log("Iframe is now loaded.");
+    console.log(window.frames['visual'].document)
+};*/
+
+// header.innerHTML = "";
+// $("#content").append(iframe);
+// document.body.appendChild(iframe);
+/*document.getElementById("visual_iframe").onload = function(){
+    console.log("onload event");
+    var _content = $("#visual_iframe").contents();
+    _content.find("#header").remove();
+}*/
+$(document).ready(function() {
+    $("img.lazy").lazyload({
+        effect: "fadeIn",
+        placeholder: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC",
+    });
+})
+</script>

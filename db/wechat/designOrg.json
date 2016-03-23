@@ -340,6 +340,17 @@
                 "hover_img": "/img/wechat_hover/designOrg/031web.png",
                 "title":""
             }
+        },
+        {
+            "name": "大宽建筑师事务所",
+            "url": "",
+            "index": 31,
+            "img": {
+                "url": "/img/wechat/designOrg/032.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/designOrg/032web.png",
+                "title":""
+            }
         }
     ]
 }

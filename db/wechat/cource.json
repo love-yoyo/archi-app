@@ -153,6 +153,39 @@
                 "hover_img": "/img/wechat_hover/cource/014web.png",
                 "title":""
             }
+        },
+        {
+            "name": "LAC留联学设",
+            "url": "",
+            "index": 14,
+            "img": {
+                "url": "/img/wechat/cource/015.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/015web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "画匠小E",
+            "url": "",
+            "index": 15,
+            "img": {
+                "url": "/img/wechat/cource/016.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/016web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "LCC",
+            "url": "",
+            "index": 16,
+            "img": {
+                "url": "/img/wechat/cource/017.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/cource/017web.png",
+                "title":""
+            }
         }
     ]
 }

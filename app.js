@@ -13,6 +13,7 @@ var wechatGuide_route = require('./subapp/wechatGuide/route');
 var freeDocs_route = require('./subapp/freeDocs/route');
 var archiNews_route = require('./subapp/archiNews/route');
 var competitionShow_route = require('./subapp/competitionShow/route');
+var frame_route = require('./subapp/frame/route');
 
 var app = express();
 
@@ -30,6 +31,7 @@ console.log("__dirname:"+__dirname);
 app.use(express.static(path.join(__dirname, 'dist/public')));
 app.use("/subapp",express.static(path.join(__dirname, 'dist/subapp')));
 app.use("/views",express.static(path.join(__dirname, 'dist/views')));
+app.use("/cource",express.static(path.join(__dirname, 'iframe/cource')));
 
 /**
  * route config
@@ -42,6 +44,7 @@ app.use('/wcg',wechatGuide_route);
 app.use('/fd',freeDocs_route);
 app.use('/an/',archiNews_route);
 app.use('/cs',competitionShow_route);
+app.use('/frame',frame_route);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

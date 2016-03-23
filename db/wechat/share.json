@@ -219,6 +219,28 @@
                 "hover_img": "/img/wechat_hover/share/020web.png",
                 "title":""
             }
+        },
+        {
+            "name": "58建筑英才网",
+            "url": "",
+            "index": 20,
+            "img": {
+                "url": "/img/wechat/share/021.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/share/021web.png",
+                "title":""
+            }
+        },
+        {
+            "name": "建筑设计联盟",
+            "url": "",
+            "index": 21,
+            "img": {
+                "url": "/img/wechat/share/022.png",
+                "alt": "",
+                "hover_img": "/img/wechat_hover/share/022web.png",
+                "title":""
+            }
         }
     ]
 }

@@ -44,180 +44,50 @@
         <section class="full-width bg-gray">
             <section class="contain wechatInfoPanel">
                 <section class="wcg-leftPanel">
+                    <% 
+                        for (var i=0;i<articles.length;i++) {
+                            var article = articles[i];
+                    %>
                     <div class="wcg-gird">
                         <div class="left">
-                            <img data-original="" class="lazy">
-                            <div class="nickName">微信昵称</div>
+                            <img data-original="<%= article.icon_url%>" class="lazy">
+                            <div class="nickName"><%= article.nickName%></div>
                         </div>
                         <div class="right">
                             <div class="img-wrap">
-                                <a>
-                                    <img data-original="/img/post_11.jpg" class="lazy">
+                                <a href="<%= article.url%>" target="_blank">
+                                    <img data-original="<%= article.img_url%>" class="lazy">
                                 </a>
                                 <div class="hoverImg">
-                                    这是一段简短的描述
+                                    <%= article.title%>
                                 </div>
                             </div>
                             <div class="desc">
-                                <div class="title">上海美术馆</div>
-                                <div class>上海美术馆是一座很漂亮的馆</div>
+                                <div class="title"></div>
+                                <div class><%= article.desc%></div>
                             </div>
                         </div>
                     </div>
-                    <div class="wcg-gird">
-                        <div class="left">
-                            <img data-original="" class="lazy">
-                            <div class="nickName">微信昵称</div>
-                        </div>
-                        <div class="right">
-                            <div class="img-wrap">
-                                <a>
-                                    <img data-original="/img/post_11.jpg" class="lazy">
-                                </a>
-                                <div class="hoverImg">
-                                    这是一段简短的描述
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <div class="title">上海美术馆</div>
-                                <div class>上海美术馆是一座很漂亮的馆</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wcg-gird">
-                        <div class="left">
-                            <img data-original="" class="lazy">
-                            <div class="nickName">微信昵称</div>
-                        </div>
-                        <div class="right">
-                            <div class="img-wrap">
-                                <a>
-                                    <img data-original="/img/post_11.jpg" class="lazy">
-                                </a>
-                                <div class="hoverImg">
-                                    这是一段简短的描述
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <div class="title">上海美术馆</div>
-                                <div class>上海美术馆是一座很漂亮的馆</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wcg-gird">
-                        <div class="left">
-                            <img data-original="" class="lazy">
-                            <div class="nickName">微信昵称</div>
-                        </div>
-                        <div class="right">
-                            <div class="img-wrap">
-                                <a>
-                                    <img data-original="/img/post_11.jpg" class="lazy">
-                                </a>
-                                <div class="hoverImg">
-                                    这是一段简短的描述
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <div class="title">上海美术馆</div>
-                                <div class>上海美术馆是一座很漂亮的馆</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wcg-gird">
-                        <div class="left">
-                            <img data-original="" class="lazy">
-                            <div class="nickName">微信昵称</div>
-                        </div>
-                        <div class="right">
-                            <div class="img-wrap">
-                                <a>
-                                    <img data-original="/img/post_11.jpg" class="lazy">
-                                </a>
-                                <div class="hoverImg">
-                                    这是一段简短的描述
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <div class="title">上海美术馆</div>
-                                <div class>上海美术馆是一座很漂亮的馆</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wcg-gird">
-                        <div class="left">
-                            <img data-original="" class="lazy">
-                            <div class="nickName">微信昵称</div>
-                        </div>
-                        <div class="right">
-                            <div class="img-wrap">
-                                <a>
-                                    <img data-original="/img/post_11.jpg" class="lazy">
-                                </a>
-                                <div class="hoverImg">
-                                    这是一段简短的描述
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <div class="title">上海美术馆</div>
-                                <div class>上海美术馆是一座很漂亮的馆</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wcg-gird">
-                        <div class="left">
-                            <img data-original="" class="lazy">
-                            <div class="nickName">微信昵称</div>
-                        </div>
-                        <div class="right">
-                            <div class="img-wrap">
-                                <a>
-                                    <img data-original="/img/post_11.jpg" class="lazy">
-                                </a>
-                                <div class="hoverImg">
-                                    这是一段简短的描述
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <div class="title">上海美术馆</div>
-                                <div class>上海美术馆是一座很漂亮的馆</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wcg-gird">
-                        <div class="left">
-                            <img data-original="" class="lazy">
-                            <div class="nickName">微信昵称</div>
-                        </div>
-                        <div class="right">
-                            <div class="img-wrap">
-                                <a>
-                                    <img data-original="/img/post_11.jpg" class="lazy">
-                                </a>
-                                <div class="hoverImg">
-                                    这是一段简短的描述
-                                </div>
-                            </div>
-                            <div class="desc">
-                                <div class="title">上海美术馆</div>
-                                <div class>上海美术馆是一座很漂亮的馆</div>
-                            </div>
-                        </div>
-                    </div>
+                    <%}%>
                 </section>
                 <section class="wcg-rightPanel">
                     <div class="title">本月人气排行榜</div>
                     <ul class="popular-board">
-                        <li data-index="1">
-                            <a href="">
-                                <img alt="" data-original="" class="lazy">
+                        <% 
+                            for (var i=0;i<popular.length;i++) {
+                                var item = popular[i];
+                        %>
+                        <li data-index="<%= i%>">
+                            <a href="<%= item.url%>" target="_blank">
+                                <img alt="" data-original="<%= item.img_url%>" class="lazy">
                                 <div class="desc-contain">
-                                    <div class="title"></div>
-                                    <div class="desc"></div>
+                                    <div class="title"><%= item.title%></div>
+                                    <div class="desc"><%= item.desc%></div>
                                 </div>
                             </a>
                         </li>
-                        <li data-index="2">
+                        <%}%>
+                        <!-- <li data-index="2">
                             <a href="">
                                 <img alt="" data-original="" class="lazy">
                                 <div class="desc-contain">
@@ -297,7 +167,7 @@
                                     <div class="desc">这是一段简介</div>
                                 </div>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </section>
             </section>

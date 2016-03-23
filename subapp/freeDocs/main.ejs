@@ -14,7 +14,7 @@
 <body>
     <% include ../header %>
     <section class="contain">
-        <div class="bs-docs-header c-bs-docs-header">
+        <div class="bs-docs-header c-bs-docs-header free-docs-header">
             <div class="title">免费资料</div>
         </div>
     </section>
@@ -23,31 +23,31 @@
             <div class="tool-cate">
                 <a class="content" href="#allDocs">
                     <div class="title">文本合集</div>
-                    <img data-original="" alt="" class="lazy">
+                    <!-- <img data-original="/img/free_doc/01.jpg" alt="" class="lazy"> -->
                 </a>
             </div>
             <div class="tool-cate">
                 <a class="content" href="#selectPictures">
                     <div class="title">精选图纸</div>
-                    <img data-original="" alt="" class="lazy">
+                    <!-- <img data-original="/img/free_doc/02.jpg" alt="" class="lazy"> -->
                 </a>
             </div>
             <div class="tool-cate">
                 <a class="content" href="#allModels">
                     <div class="title">模型合集</div>
-                    <img data-original="" alt="" class="lazy">
+                    <!-- <img data-original="/img/free_doc/03.jpg" alt="" class="lazy"> -->
                 </a>
             </div>
             <div class="tool-cate">
                 <a class="content" href="#selectMaterial">
                     <div class="title">精选素材</div>
-                    <img data-original="" alt="" class="lazy">
+                    <!-- <img data-original="/img/free_doc/04.jpg" alt="" class="lazy"> -->
                 </a>
             </div>
             <div class="tool-cate">
                 <a class="content" href="#softwareCourse">
                     <div class="title">软件教程</div>
-                    <img data-original="" alt="" class="lazy">
+                    <!-- <img data-original="/img/free_doc/05.jpg" alt="" class="lazy"> -->
                 </a>
             </div>
         </div>
@@ -136,7 +136,7 @@
         </div>
         <div class="doc-ad-container">
             <a href="http://www.archi123.com/" target="_blank">
-                <img data-original="/img/ad_imgs/ad_wait.jpg" class="lazy"/>
+                <img data-original="/img/ad_imgs/ad_askArchi.jpg" class="lazy"/>
             </a>
         </div>
     </section>
@@ -209,7 +209,9 @@
 <script type="text/javascript">
 $(document).ready(function() {
     $("img.lazy").lazyload({
-        placeholder: "/img/archi-logo.png",
+        placeholder: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC",
+        failure_limit : 10,
+        threshold : 200,
         effect: "fadeIn"
     });
 

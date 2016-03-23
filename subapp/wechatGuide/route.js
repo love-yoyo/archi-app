@@ -15,30 +15,24 @@ router.get('/', function(req, res) {
 router.get('/main.html', function(req, res) {
     console.log("enter in this");
     var _logos = [];
-    /*for (var i=0;i<40;i++) {
-        var _b = i+1;
-        if (i+1<10) {
-            _b = "0"+(_b);
-        }
-        var a =    {
-          "name": "",
-          "url": "",
-          "index": i,
-          "img": {
-            "url": "/img/wechat/hot/0"+_b+".png",
-            "alt": "",
-            "hover_img": "/img/wechat_hover/hot/0"+_b+"web.png",
-            "title":"世界最受欢迎的建筑网站"
-          }
-        }
-        _logos.push(a);
-    }*/
+
     const db = low('db/wechat/hot.json', {
         storage
     });
-    var _logos = _.clone(db("logos").chain().value());
+    const db_article = low('db/wechat_article.json', {
+        storage
+    });
+    const db_popular = low('db/wechat_popular.json', {
+        storage
+    });
+    var _logos = _.clone(db("logos").chain().value()),
+        _articles = _.clone(db_article("article").chain().value()),
+        _popular = _.clone(db_popular("popular").chain().value());
+
     res.render('wechatGuide/main',{
-        logos: _logos
+        logos: _logos,
+        articles: _articles,
+        popular: _popular
     });
 });
 
